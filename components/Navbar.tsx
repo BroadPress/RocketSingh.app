@@ -8,7 +8,7 @@ const Navbar = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setVisible(false);
-    }, 30000);
+    }, 59000);
 
     return () => clearTimeout(timer); // cleanup
   }, []);
@@ -21,14 +21,16 @@ const Navbar = () => {
             
             {/* Center Content */}
             <div className='flex flex-col sm:flex-row items-center gap-3 text-center'>
-              <p className='text-sm sm:text-[13px] lg:text-sm'>
-                Grab a limited time offer. Free inspection or 10% discount in every services. 6 months service warranty. Hurry up.
-              </p>
+            <p className='text-sm sm:text-[13px] lg:text-sm'>
+              Cleaning Sewa is looking for Business Partners in Nepal. 
+            </p>
 
-              {/* <button className='text-sm italic hover:bg-[#ebebeb] hover:text-[#074842] border border-[#ebebeb] px-2 py-1 rounded-md'>
+            <a href="/partnership">
+              <button className='text-sm italic hover:bg-[#ebebeb] hover:text-[#074842] border border-[#ebebeb] px-2 py-1 rounded-md'>
                 Apply Now
-              </button> */}
-            </div>
+              </button>
+            </a>
+          </div>
 
           </div>
         </div>

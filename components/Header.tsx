@@ -45,7 +45,7 @@ const Header = () => {
               alt="Cleaning Sewa Logo"
               width={200}
               height={60}
-              className="w-[190px] sm:w-[220px] h-auto"
+              className="w-[290px] sm:w-[220px] h-auto"
               priority
             />
           </Link>
