@@ -21,22 +21,24 @@ const Home = () => {
               Cleaning Sewa
             </div>
 
-            <p className="text-[18px] max-w-[600px] leading-relaxed opacity-95">
-              <h1>Professional cleaning services in Kathmandu, Nepal. </h1>
-            </p>
+            <h1 className="text-[18px] max-w-[600px] leading-relaxed opacity-95">
+              Professional cleaning services in Kathmandu, Nepal.
+            </h1>
 
             <div className="mt-8 flex gap-4">
-          <Link href="/about">
-            <button className="border-2 border-[#0D5D59] py-2 px-6 rounded-md text-[#0D5D59] font-semibold hover:bg-[#0D5D59] hover:text-white transition duration-300">
+          <Link
+              href="/about"
+              className="inline-block border-2 border-[#0D5D59] py-2 px-6 rounded-md text-[#0D5D59] font-semibold hover:bg-[#0D5D59] hover:text-white transition duration-300 cursor-pointer"
+            >
               About
-            </button>
-          </Link>
+            </Link>
 
-          <Link href="/book">
-            <button className="bg-[#0D5D59] text-white px-6 py-2 rounded-md font-semibold hover:bg-opacity-90 hover:scale-105 transition duration-300">
-              Book Service
-            </button>
-          </Link>
+          <Link
+              href="/book"
+              className="inline-block border-2 border-[#0D5D59] py-2 px-6 rounded-md text-[#0D5D59] font-semibold hover:bg-[#0D5D59] hover:text-white transition duration-300 cursor-pointer"
+            >
+              Book a Service
+            </Link>
         </div>
           </div>
         </div>

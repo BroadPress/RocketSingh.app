@@ -1,5 +1,5 @@
 'use client'
-import FontSizeChanger from './FontSizeChanger'
+
 
 type RibbonProps = {
   name: string;
@@ -12,9 +12,7 @@ const Ribbon:React.FC<RibbonProps> = ({name,showfont}) => {
         <div className=" px-4 md:px-8">
           <h1 className="text-3xl sm:text-4xl">{name}</h1>
         </div>
-        <div>
-         <FontSizeChanger showFont={showfont ?? false} />
-         </div>
+        
       </div>
     </div>
   )
