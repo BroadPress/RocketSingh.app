@@ -12,26 +12,30 @@ import { Suspense } from 'react';
 
 
 export const metadata = {
-  title: "RocketSingh | Professional cleaning Services in New Delhi, India",
-  description: "Welcome to RocketSingh, your trusted partner in professional cleaning services in New Delhi, India.",
-  keywords: "RocketSingh, Professional Cleaning, New Delhi, India",
+  metadataBase: new URL("https://rocketsingh-six.vercel.app"),
+  title: "RocketSingh | Super Fast Service",
+  description: "RocketSingh is a super fast on demand home service.",
+  keywords: "RocketSingh, Super Fast Service, On Demand Home Service, India",
   authors: [{ name: "RocketSingh" }],
   openGraph: {
-    title: "RocketSingh | Professional Cleaning Services in New Delhi, India",
-    description: "Welcome to RocketSingh, your trusted partner in professional cleaning services.",
-    url: "https://cleaningsewa.com",
+    title: "RocketSingh | Super Fast Service",
+    description: "RocketSingh is a super fast on demand home service.",
+    url: "https://rocketsingh-six.vercel.app",
     images: [
       {
-        url: "https://cleaningsewa.com/og/default.jpg",
+        url: "/og/default.png",
+        width: 1200,
+        height: 630,
+        alt: "RocketSingh | Super Fast Service",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "RocketSingh | Professional Cleaning Services in New Delhi, India",
-    description: "Welcome to RocketSingh, your trusted partner in professional cleaning services.",
-    images: ["https://cleaningsewa.com/og/default.jpg"],
+    title: "RocketSingh | Super Fast Service",
+    description: "RocketSingh is a super fast on demand home service.",
+    images: ["/og/default.png"],
   },
 };
 

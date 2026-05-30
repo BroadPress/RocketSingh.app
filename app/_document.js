@@ -9,25 +9,25 @@ export default function Document() {
         <link rel="manifest" href="/manifest.json" />
 
         {/* Primary Meta Tags */}
-        <meta name="title" content="RocketSingh | Professional Cleaning Services in New Delhi, India" />
-        <meta name="description" content="Welcome to RocketSingh, your trusted partner in professional cleaning services." />
-        <meta name="keywords" content="RocketSingh, Professional Cleaning, New Delhi, India" />
+        <meta name="title" content="RocketSingh | Super Fast Service" />
+        <meta name="description" content="RocketSingh is a super fast on demand home service." />
+        <meta name="keywords" content="RocketSingh, Super Fast Service, On Demand Home Service, India" />
         <meta name="author" content="RocketSingh" />
 
         {/* Open Graph */}
-        <meta property="og:url" content="https://cleaningsewa.com" />
+        <meta property="og:url" content="https://rocketsingh-six.vercel.app" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="RocketSingh | Professional Cleaning Services in New Delhi, India" />
-        <meta property="og:description" content="Welcome to RocketSingh, your trusted partner in professional cleaning services." />
-        <meta property="og:image" content="https://cleaningsewa.com/og/default.jpg" />
+        <meta property="og:title" content="RocketSingh | Super Fast Service" />
+        <meta property="og:description" content="RocketSingh is a super fast on demand home service." />
+        <meta property="og:image" content="https://rocketsingh-six.vercel.app/og/default.png" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="cleaningsewa.com" />
-        <meta property="twitter:url" content="https://cleaningsewa.com" />
-        <meta name="twitter:title" content="RocketSingh | Professional Cleaning Services in New Delhi, India" />
-        <meta name="twitter:description" content="Welcome to RocketSingh, your trusted partner in professional cleaning services." />
-        <meta name="twitter:image" content="https://cleaningsewa.com/og/default.jpg" />
+        <meta property="twitter:domain" content="rocketsingh-six.vercel.app" />
+        <meta property="twitter:url" content="https://rocketsingh-six.vercel.app" />
+        <meta name="twitter:title" content="RocketSingh | Super Fast Service" />
+        <meta name="twitter:description" content="RocketSingh is a super fast on demand home service." />
+        <meta name="twitter:image" content="https://rocketsingh-six.vercel.app/og/default.png" />
       </Head>
       <body>
         {/* Google Tag Manager (noscript) */}
