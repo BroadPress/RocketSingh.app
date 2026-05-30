@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import BrandLogo from "./BrandLogo";
-import MobileDrawer from "./MobileDrawer";
+import SideNavDrawer from "./SideNavDrawer";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -80,8 +80,8 @@ const Header = () => {
             </button>
           </div>
 
-          {/* Mobile Drawer */}
-          <MobileDrawer setIsOpen={setIsOpen} isOpen={isOpen} />
+          {/* Side menu — mobile + desktop */}
+          <SideNavDrawer setIsOpen={setIsOpen} isOpen={isOpen} />
         </nav>
       </div>
     </header>
