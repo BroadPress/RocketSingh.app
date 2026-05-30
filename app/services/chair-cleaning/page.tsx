@@ -47,10 +47,10 @@ const ExecutiveChairCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Executive Chair Cleaning Services in Nepal</title>
+        <title>Executive Chair Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional executive chair cleaning services in Nepal. Deep cleaning, stain removal, deodorization, and sanitization for fabric and leather chairs."
+          content="Professional executive chair cleaning services in India. Deep cleaning, stain removal, deodorization, and sanitization for fabric and leather chairs."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -72,7 +72,7 @@ const ExecutiveChairCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold text-white md:text-[52px]">
-              Executive Chair Cleaning in Nepal
+              Executive Chair Cleaning in India
             </h1>
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Professional cleaning for executive chairs including stain removal, deodorization, sanitization, and fabric or leather care to maintain hygiene and appearance.

@@ -47,10 +47,10 @@ const DeadAnimalRemoval = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Dead Animal Removal Services in Nepal</title>
+        <title>Dead Animal Removal Services in India</title>
         <meta
           name="description"
-          content="Professional dead animal removal services in Nepal. Safe, hygienic, and eco-friendly removal from homes, offices, and commercial spaces."
+          content="Professional dead animal removal services in India. Safe, hygienic, and eco-friendly removal from homes, offices, and commercial spaces."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -72,7 +72,7 @@ const DeadAnimalRemoval = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold text-white md:text-[52px]">
-              Dead Animal Removal Services in Nepal
+              Dead Animal Removal Services in India
             </h1>
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Safe and professional removal of dead animals from homes, offices, and commercial areas. We clean and disinfect affected areas for a hygienic environment.
@@ -94,7 +94,7 @@ const DeadAnimalRemoval = () => {
           Professional Dead Animal Removal
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
-          Our dead animal removal services in Nepal ensure a safe, hygienic, and eco-friendly process. We remove the animal, clean the area, and sanitize it to prevent health risks and odors.
+          Our dead animal removal services in India ensure a safe, hygienic, and eco-friendly process. We remove the animal, clean the area, and sanitize it to prevent health risks and odors.
         </p>
         <p className="text-gray-700 leading-relaxed mb-6">
           Using modern equipment, protective gear, and certified disinfectants, we handle even decomposed animals while ensuring the safety of your family, pets, and employees.

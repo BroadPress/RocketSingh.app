@@ -47,10 +47,10 @@ const SofaCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Sofa/Upholstery Cleaning Services in Nepal</title>
+        <title>Sofa/Upholstery Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional sofa and upholstery cleaning services in Nepal. Remove dust, allergens, stains, and odors from sofas, chairs, and cushions using safe and effective cleaning techniques."
+          content="Professional sofa and upholstery cleaning services in India. Remove dust, allergens, stains, and odors from sofas, chairs, and cushions using safe and effective cleaning techniques."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -60,7 +60,7 @@ const SofaCleaning = () => {
       <div className="relative w-full h-[560px] flex items-center justify-center text-white mb-20">
         <img
           src="/services/sofa-upholstery-cleaning.jpg"
-          alt="Sofa/Upholstery Cleaning Services in Nepal"
+          alt="Sofa/Upholstery Cleaning Services in India"
           className="absolute inset-0 z-0 object-cover h-full w-full"
         />
         <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
@@ -73,10 +73,10 @@ const SofaCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold text-white md:text-[52px]">
-              Sofa/Upholstery Cleaning Services in Nepal
+              Sofa/Upholstery Cleaning Services in India
             </h1>
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
-              Professional sofa and upholstery cleaning for homes and offices in Nepal. Remove dust, stains, allergens, pet hair, and odors for a fresh and hygienic living space.
+              Professional sofa and upholstery cleaning for homes and offices in India. Remove dust, stains, allergens, pet hair, and odors for a fresh and hygienic living space.
             </p>
             
             <Link href="/book">
@@ -95,7 +95,7 @@ const SofaCleaning = () => {
           Comprehensive Sofa & Upholstery Cleaning
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
-          Our sofa and upholstery cleaning services in Nepal ensure that all your furniture is thoroughly cleaned and sanitized. We remove dust, dirt, allergens, pet hair, stains, and odors from sofas, chairs, and cushions using professional equipment and safe, eco-friendly cleaning products.
+          Our sofa and upholstery cleaning services in India ensure that all your furniture is thoroughly cleaned and sanitized. We remove dust, dirt, allergens, pet hair, stains, and odors from sofas, chairs, and cushions using professional equipment and safe, eco-friendly cleaning products.
         </p>
         <p className="text-gray-700 leading-relaxed mb-6">
           We focus on creating a healthy and fresh living environment while extending the life of your furniture and maintaining its appearance.

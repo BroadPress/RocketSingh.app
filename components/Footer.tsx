@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <>
-      
+
       <footer className="relative footer pt-16 pb-10 border-t z-10">
 
         {/* TOP SECTION */}
@@ -25,13 +25,13 @@ const Footer = () => {
             </div>
 
             <p className="text-[15px] leading-relaxed mb-4">
-              RocketSingh is a leading professional cleaning company in Kathmandu, Nepal, offering top-quality, reliable, and affordable cleaning services for homes, offices, and commercial spaces. 
+              RocketSingh is the Indian version of TACKLES PRO — a growing platform built with a vision to deliver fast, reliable, and professional on-demand services across India.
             </p>
-
+            <p className="text-[15px] leading-relaxed mb-4">
+              Powered by a pool of dedicated, skilled, and trained professionals, RocketSingh is committed to providing SuperFast Services 24 hours 365 days a year. From emergency support to daily maintenance solutions, our mission is to connect customers with trusted experts anytime, anywhere.
+            </p>
             <p className="text-[15px] leading-relaxed">
-              Our mission is to empower households and businesses with reliable,
-              efficient, and eco-friendly cleaning services that ensure a spotless,
-              healthy environment while saving time and effort.
+              With a strong focus on speed, professionalism, customer satisfaction, and digital convenience, RocketSingh aims to redefine modern service delivery by bringing technology-driven workforce solutions to homes, offices, and businesses throughout India.
             </p>
           </div>
 
@@ -148,14 +148,14 @@ const Footer = () => {
               <span className="text-sm">rocketsingh@sriyog.com</span>
             </a>
 
-            <a href="tel:+9779851152774" className="flex items-center gap-2 border-2 rounded-lg px-7 py-3 w-full sm:w-auto">
+            <a href="tel:+919851152774" className="flex items-center gap-2 border-2 rounded-lg px-7 py-3 w-full sm:w-auto">
               <img src="/icons/phone.svg" alt="phone" className="h-6 w-6" />
-              <span className="text-sm">+977-98511 52774</span>
+              <span className="text-sm">+91-98511 52774</span>
             </a>
 
-            <a href="https://wa.me/9779851152774" target="_blank" className="flex items-center gap-2 border-2 rounded-lg px-6 py-3 w-full sm:w-auto">
+            <a href="https://wa.me/919851152774" target="_blank" className="flex items-center gap-2 border-2 rounded-lg px-6 py-3 w-full sm:w-auto">
               <img src="/icons/whatsapp.svg" alt="whatsapp" className="h-6 w-6" />
-              <span className="text-sm">+977 98511 52774</span>
+              <span className="text-sm">+91 98511 52774</span>
             </a>
           </div>
         </div>

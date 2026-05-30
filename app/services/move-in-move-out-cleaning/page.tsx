@@ -7,8 +7,8 @@ export default function MoveInMoveOutCleaning() {
     <ServicePageLayout
       serviceName="Move-In / Move-Out Cleaning"
       heroImage="/services/move-in-move-out-cleaning.jpg"
-      heroTitle="Move-In & Move-Out Cleaning Services in Nepal"
-      heroDescription="Spotless move-in and move-out cleaning across Nepal. Deep sanitization, debris removal, and every corner cleaned for a seamless relocation."
+      heroTitle="Move-In & Move-Out Cleaning Services in India"
+      heroDescription="Spotless move-in and move-out cleaning across India. Deep sanitization, debris removal, and every corner cleaned for a seamless relocation."
       bookLabel="Book Move-In / Move-Out Cleaning"
       introTitle="Stress-Free Relocation Cleaning"
       introParagraphs={[

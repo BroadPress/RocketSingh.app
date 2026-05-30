@@ -47,10 +47,10 @@ const SwimmingPoolCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Swimming Pool Cleaning Services in Nepal</title>
+        <title>Swimming Pool Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional swimming pool cleaning services in Nepal including debris removal, chemical balancing, filter cleaning, and regular maintenance for safe and hygienic pools."
+          content="Professional swimming pool cleaning services in India including debris removal, chemical balancing, filter cleaning, and regular maintenance for safe and hygienic pools."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -60,7 +60,7 @@ const SwimmingPoolCleaning = () => {
       <div className="relative w-full h-[560px] flex items-center justify-center text-white mb-20">
         <img
           src="/services/swimming-pool-cleaning.jpg"
-          alt="Swimming Pool Cleaning Services in Nepal"
+          alt="Swimming Pool Cleaning Services in India"
           className="absolute inset-0 z-0 object-cover h-full w-full"
         />
         <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
@@ -72,7 +72,7 @@ const SwimmingPoolCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold text-white md:text-[52px]">
-              Swimming Pool Cleaning Services in Nepal
+              Swimming Pool Cleaning Services in India
             </h1>
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Professional swimming pool cleaning and maintenance for homes and commercial pools. We ensure hygienic, safe, and sparkling water for your pool.
@@ -94,7 +94,7 @@ const SwimmingPoolCleaning = () => {
           Comprehensive Swimming Pool Cleaning Services
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
-          Our swimming pool cleaning services in Nepal cover skimming, scrubbing, vacuuming, filter cleaning, chemical balancing, and debris removal. We ensure a clean, safe, and healthy swimming environment.
+          Our swimming pool cleaning services in India cover skimming, scrubbing, vacuuming, filter cleaning, chemical balancing, and debris removal. We ensure a clean, safe, and healthy swimming environment.
         </p>
         <p className="text-gray-700 leading-relaxed mb-6">
           We provide reliable maintenance for both residential and commercial pools to keep your water sparkling and safe.

@@ -47,10 +47,10 @@ const DesktopCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Desktop Computer Cleaning Services in Nepal</title>
+        <title>Desktop Computer Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional desktop computer cleaning services in Nepal. Dust removal, keyboard and screen cleaning, internal component sanitization, and maintenance for optimal performance."
+          content="Professional desktop computer cleaning services in India. Dust removal, keyboard and screen cleaning, internal component sanitization, and maintenance for optimal performance."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -72,7 +72,7 @@ const DesktopCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold text-white md:text-[52px]">
-              Desktop Computer Cleaning Services in Nepal
+              Desktop Computer Cleaning Services in India
             </h1>
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Professional cleaning for desktop computers, including dust removal, internal component cleaning, and sanitization for better performance and longevity.
@@ -94,7 +94,7 @@ const DesktopCleaning = () => {
           Professional Desktop Computer Cleaning
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
-          Our desktop computer cleaning services in Nepal remove dust, dirt, and debris from internal and external components. We clean keyboards, screens, and other peripherals to ensure hygiene and smooth performance.
+          Our desktop computer cleaning services in India remove dust, dirt, and debris from internal and external components. We clean keyboards, screens, and other peripherals to ensure hygiene and smooth performance.
         </p>
         <p className="text-gray-700 leading-relaxed mb-6">
           Using specialized tools and safe cleaning solutions, our technicians prevent overheating, extend the lifespan of your computer, and maintain optimal performance.

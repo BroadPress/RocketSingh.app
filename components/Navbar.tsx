@@ -22,7 +22,7 @@ const Navbar = () => {
             {/* Center Content */}
             <div className='flex flex-col sm:flex-row items-center gap-3 text-center'>
             <p className='text-sm sm:text-[13px] lg:text-sm'>
-              RocketSingh is looking for Business Partners in Nepal. 
+              RocketSingh is looking for Business Partners in India. 
             </p>
 
             <a href="/partnership">

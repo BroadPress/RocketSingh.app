@@ -47,10 +47,10 @@ const GarageCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Garage Cleaning Services in Nepal</title>
+        <title>Garage Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional garage cleaning services in Nepal. Deep cleaning, power washing, degreasing, and organizing residential and commercial garages."
+          content="Professional garage cleaning services in India. Deep cleaning, power washing, degreasing, and organizing residential and commercial garages."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -72,7 +72,7 @@ const GarageCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold text-white md:text-[52px]">
-              Garage Cleaning Services in Nepal
+              Garage Cleaning Services in India
             </h1>
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Professional garage cleaning services for residential and commercial spaces. We remove dirt, oil stains, debris, and clutter to ensure a safe, organized, and hygienic garage.
@@ -94,7 +94,7 @@ const GarageCleaning = () => {
           Complete Garage Cleaning Solutions
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
-          Our garage cleaning services in Nepal ensure your garage is spotless and organized. We use modern equipment and eco-friendly products for sweeping, power washing, degreasing, and organizing.
+          Our garage cleaning services in India ensure your garage is spotless and organized. We use modern equipment and eco-friendly products for sweeping, power washing, degreasing, and organizing.
         </p>
         <p className="text-gray-700 leading-relaxed mb-6">
           We provide reliable and thorough garage cleaning for both residential and commercial properties, creating a safe and hygienic environment.

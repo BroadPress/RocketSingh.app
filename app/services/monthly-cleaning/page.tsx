@@ -47,10 +47,10 @@ const MonthlyCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Monthly Cleaning Services in Nepal</title>
+        <title>Monthly Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional monthly cleaning services in Nepal including deep cleaning, dusting, carpet and furniture cleaning, and regular home sanitation for a hygienic living environment."
+          content="Professional monthly cleaning services in India including deep cleaning, dusting, carpet and furniture cleaning, and regular home sanitation for a hygienic living environment."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -60,7 +60,7 @@ const MonthlyCleaning = () => {
       <div className="relative w-full h-[560px] flex items-center justify-center text-white mb-20">
         <img
           src="/services/monthly-cleaning.jpg"
-          alt="Monthly Cleaning Services in Nepal"
+          alt="Monthly Cleaning Services in India"
           className="absolute inset-0 z-0 object-cover h-full w-full"
         />
         <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
@@ -72,7 +72,7 @@ const MonthlyCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold text-white md:text-[52px]">
-              Monthly Cleaning Services in Nepal
+              Monthly Cleaning Services in India
             </h1>
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Keep your home spotless and hygienic every month with our professional monthly cleaning services, including deep cleaning, dusting, carpet care, and furniture sanitation.

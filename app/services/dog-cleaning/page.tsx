@@ -47,10 +47,10 @@ const DogCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Dog Cleaning Services in Nepal</title>
+        <title>Dog Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional dog cleaning and grooming services in Nepal including bathing, nail trimming, ear cleaning, brushing, and full grooming for dogs of all breeds."
+          content="Professional dog cleaning and grooming services in India including bathing, nail trimming, ear cleaning, brushing, and full grooming for dogs of all breeds."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -60,7 +60,7 @@ const DogCleaning = () => {
       <div className="relative w-full h-[560px] flex items-center justify-center text-white mb-20">
         <img
           src="/services/dog-cleaning.jpg"
-          alt="Dog Cleaning Services in Nepal"
+          alt="Dog Cleaning Services in India"
           className="absolute inset-0 z-0 object-cover h-full w-full"
         />
         <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
@@ -72,7 +72,7 @@ const DogCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold text-white md:text-[52px]">
-              Dog Cleaning Services in Nepal
+              Dog Cleaning Services in India
             </h1>
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Professional dog cleaning and grooming services for all breeds and sizes. We ensure your dog is clean, healthy, and happy.
@@ -91,10 +91,10 @@ const DogCleaning = () => {
       {/* Description Section */}
       <div className="mx-auto px-5 py-10 max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-teal-900 mb-5">
-          Dog Cleaning Services in Kathmandu
+          Dog Cleaning Services in New Delhi
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
-          Our dog cleaning services in Nepal cover bathing, brushing, nail trimming, ear cleaning, and full grooming. We use trained professionals, modern equipment, and pet-friendly products for a safe and hygienic grooming experience.
+          Our dog cleaning services in India cover bathing, brushing, nail trimming, ear cleaning, and full grooming. We use trained professionals, modern equipment, and pet-friendly products for a safe and hygienic grooming experience.
         </p>
         <p className="text-gray-700 leading-relaxed mb-6">
           We provide reliable grooming services to keep your dog healthy, clean, and happy.

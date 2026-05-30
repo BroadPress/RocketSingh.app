@@ -12,15 +12,15 @@ const projects: Project[] = [
   { title: "Solatee Westend", description: "Comprehensive corporate and facility cleaning services for a spotless guest experience.", image: "/projects/1.jpg" },
   { title: "Bajeko Sekuwa", description: "Deep kitchen and dining area sanitization for hygienic restaurant operations.", image: "/projects/2.jpg" },
   { title: "Sudarshan Resort", description: "Full resort cleaning including guest rooms, lobby, and common areas.", image: "/projects/3.jpg" },
-  { title: "Pokhara Airport", description: "Terminal and restroom cleaning ensuring safe and hygienic spaces for travelers.", image: "/projects/4.jpg" },
+  { title: "Mumbai Airport", description: "Terminal and restroom cleaning ensuring safe and hygienic spaces for travelers.", image: "/projects/4.jpg" },
   { title: "Gokarna Forest Resort", description: "Garden, lobby, and room cleaning for a pristine natural retreat.", image: "/projects/5.jpg" },
   { title: "Ncell", description: "Office and corporate space cleaning, including desks, conference rooms, and common areas.", image: "/projects/6.jpg" },
   { title: "Dusit Thani Himalaya Resort", description: "Post-construction and daily maintenance cleaning for luxury accommodation.", image: "/projects/7.jpg" },
   { title: "Club Himalaya", description: "Event cleaning, lobby and facility sanitation for guest comfort and hygiene.", image: "/projects/8.jpg" },
   { title: "Hotel Bhadgaon", description: "Complete hotel cleaning and housekeeping services for guest satisfaction.", image: "/projects/9.jpg" },
   { title: "Kavya Himalayas", description: "Corporate and residential cleaning services for office and lounge areas.", image: "/projects/10.jpg" },
-  { title: "Mercure Kathmandu", description: "Room, lobby, and kitchen cleaning maintaining international hospitality standards.", image: "/projects/11.jpg" },
-  { title: "Kathmandu Guest House", description: "Regular and deep cleaning services for a safe and comfortable stay.", image: "/projects/12.jpg" },
+  { title: "Mercure New Delhi", description: "Room, lobby, and kitchen cleaning maintaining international hospitality standards.", image: "/projects/11.jpg" },
+  { title: "Delhi Guest House", description: "Regular and deep cleaning services for a safe and comfortable stay.", image: "/projects/12.jpg" },
   { title: "Sankha Park", description: "Public space cleaning including pathways, lawns, and restrooms.", image: "/projects/13.jpg" },
   { title: "Hotel Aikawa, Sauraha", description: "Comprehensive guest room, lobby, and kitchen cleaning services.", image: "/projects/14.jpg" },
   { title: "The British School", description: "Classroom, corridor, and office cleaning ensuring a healthy learning environment.", image: "/projects/15.jpg" },
@@ -34,13 +34,13 @@ const projects: Project[] = [
   { title: "Silver Oak Banquet", description: "Comprehensive banquet cleaning for weddings and corporate events.", image: "/projects/23.jpg" },
   { title: "The British College", description: "Classrooms, hallways, and administrative office cleaning services.", image: "/projects/24.jpg" },
   { title: "Rani Mahal Banquet", description: "Pre- and post-event cleaning services for a hygienic and polished venue.", image: "/projects/25.jpg" },
-  { title: "Nepal Mediciti Hospital", description: "Patient room, lobby, and critical area cleaning with sanitization.", image: "/projects/26.jpg" },
+  { title: "Mediciti Hospital", description: "Patient room, lobby, and critical area cleaning with sanitization.", image: "/projects/26.jpg" },
   { title: "Frontline Hospital", description: "Hospital-grade cleaning and disinfection services for safety and hygiene.", image: "/projects/27.jpg" },
   { title: "Waterfront Resort", description: "Full resort cleaning including rooms, dining, and outdoor areas.", image: "/projects/28.jpg" },
   { title: "Rupy’s International School", description: "Comprehensive school cleaning including classrooms, labs, and playgrounds.", image: "/projects/29.jpg" },
   { title: "Norvic Hospital", description: "Patient care area cleaning and sanitation for a safe hospital environment.", image: "/projects/30.jpg" },
   { title: "Fortune Resort", description: "Full cleaning services including guest rooms, lobby, and banquet halls.", image: "/projects/31.jpg" },
-  { title: "Kathmandu Dhumbarahi", description: "Daily housekeeping and deep cleaning for premium hotel rooms.", image: "/projects/32.jpg" },
+  { title: "Delhi Premium Hotel", description: "Daily housekeeping and deep cleaning for premium hotel rooms.", image: "/projects/32.jpg" },
   { title: "Tribhuwan Park", description: "Public park cleaning including lawns, pathways, and seating areas.", image: "/projects/33.jpg" },
   { title: "Basundhara Park", description: "Professional cleaning services for recreational spaces, pathways, and greenery.", image: "/projects/34.jpg" },
   { title: "Garden of Dreams", description: "Historical garden and public area cleaning ensuring a pleasant visitor experience.", image: "/projects/35.jpg" },
@@ -56,7 +56,7 @@ export default function ProjectsPage() {
           Our Projects
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto">
-          RocketSingh’s portfolio of beautifully maintained gardens, resorts, hotels, schools, and corporate spaces across Nepal.
+          RocketSingh’s portfolio of beautifully maintained gardens, resorts, hotels, schools, and corporate spaces across India.
         </p>
       </section>
 

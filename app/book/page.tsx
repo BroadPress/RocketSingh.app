@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Book a Cleaning Service | RocketSingh",
-  description: "Book professional cleaning services in Kathmandu, Nepal with RocketSingh.",
-  keywords: "cleaning services Nepal, book cleaning, RocketSingh",
+  description: "Book professional cleaning services in New Delhi, India with RocketSingh.",
+  keywords: "cleaning services India, book cleaning, RocketSingh",
 };
 
 export default function BookPage() {
@@ -28,7 +28,7 @@ export default function BookPage() {
         </div>
 
         <h1 className="text-xl sm:text-2xl font-bold text-gray-900">
-          Book Cleaning Service in Nepal
+          Book Cleaning Service in India
         </h1>
       </div>
 

@@ -12,12 +12,12 @@ import { Suspense } from 'react';
 
 
 export const metadata = {
-  title: "RocketSingh | Professional cleaning Services in Kathmandu, Nepal",
-  description: "Welcome to RocketSingh, your trusted partner in professional cleaning services in Kathmandu, Nepal.",
-  keywords: "RocketSingh, Professional Cleaning, Kathmandu, Nepal",
+  title: "RocketSingh | Professional cleaning Services in New Delhi, India",
+  description: "Welcome to RocketSingh, your trusted partner in professional cleaning services in New Delhi, India.",
+  keywords: "RocketSingh, Professional Cleaning, New Delhi, India",
   authors: [{ name: "RocketSingh" }],
   openGraph: {
-    title: "RocketSingh | Professional Cleaning Services in Kathmandu, Nepal",
+    title: "RocketSingh | Professional Cleaning Services in New Delhi, India",
     description: "Welcome to RocketSingh, your trusted partner in professional cleaning services.",
     url: "https://cleaningsewa.com",
     images: [
@@ -29,7 +29,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "RocketSingh | Professional Cleaning Services in Kathmandu, Nepal",
+    title: "RocketSingh | Professional Cleaning Services in New Delhi, India",
     description: "Welcome to RocketSingh, your trusted partner in professional cleaning services.",
     images: ["https://cleaningsewa.com/og/default.jpg"],
   },

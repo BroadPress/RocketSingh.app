@@ -47,10 +47,10 @@ const HelicopterCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Helicopter Cleaning Services in Nepal</title>
+        <title>Helicopter Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional helicopter cleaning services in Nepal including exterior washing, interior cabin cleaning, rotor and landing gear cleaning, and aviation-approved sanitation for private and commercial helicopters."
+          content="Professional helicopter cleaning services in India including exterior washing, interior cabin cleaning, rotor and landing gear cleaning, and aviation-approved sanitation for private and commercial helicopters."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -72,7 +72,7 @@ const HelicopterCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold text-white md:text-[52px]">
-              Helicopter Cleaning Services in Nepal
+              Helicopter Cleaning Services in India
             </h1>
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Professional helicopter cleaning for private, corporate, and commercial aircraft. Exterior washing, cockpit and cabin sanitation, rotor and landing gear maintenance, and polishing to keep your helicopter safe and spotless.
@@ -94,7 +94,7 @@ const HelicopterCleaning = () => {
           Professional Helicopter Cleaning
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
-          Our helicopter cleaning services in Nepal ensure every aircraft is spotless, hygienic, and well-maintained. We use aviation-approved products and trained professionals for exterior, interior, and cockpit cleaning.
+          Our helicopter cleaning services in India ensure every aircraft is spotless, hygienic, and well-maintained. We use aviation-approved products and trained professionals for exterior, interior, and cockpit cleaning.
         </p>
         <p className="text-gray-700 leading-relaxed mb-6">
           We deliver reliable, thorough, and safe helicopter cleaning services for private, corporate, and commercial operators.

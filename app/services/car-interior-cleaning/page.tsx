@@ -47,10 +47,10 @@ const CarInteriorCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Car Interior Cleaning Services in Nepal</title>
+        <title>Car Interior Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional car interior cleaning services in Nepal. Deep cleaning, stain removal, and sanitization for a fresh and hygienic vehicle interior."
+          content="Professional car interior cleaning services in India. Deep cleaning, stain removal, and sanitization for a fresh and hygienic vehicle interior."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -75,7 +75,7 @@ const CarInteriorCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold md:text-[52px]">
-              Car Interior Cleaning Services in Nepal
+              Car Interior Cleaning Services in India
             </h1>
 
             <p className="max-w-[858px] mb-8 text-base md:text-lg leading-relaxed">
@@ -98,7 +98,7 @@ const CarInteriorCleaning = () => {
         </h2>
 
         <p className="text-gray-700 leading-relaxed mb-6">
-          Our car interior cleaning services in Nepal provide deep cleaning for every part of your vehicle’s interior. From seats and carpets to dashboards and door panels, we ensure a spotless and refreshed environment.
+          Our car interior cleaning services in India provide deep cleaning for every part of your vehicle’s interior. From seats and carpets to dashboards and door panels, we ensure a spotless and refreshed environment.
         </p>
 
         <p className="text-gray-700 leading-relaxed mb-6">

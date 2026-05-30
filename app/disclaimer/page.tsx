@@ -92,7 +92,7 @@ const Disclaimer = () => {
           <div>
             <h2 className="text-2xl font-semibold text-teal-800 mb-2">Transfer of Data</h2>
             <p className="about leading-relaxed">
-              Your information may be transferred and maintained on servers. By submitting data, you consent to its transfer to servers in Nepal. We take necessary steps to ensure data security.
+              Your information may be transferred and maintained on servers. By submitting data, you consent to its transfer to servers in India. We take necessary steps to ensure data security.
             </p>
           </div>
 

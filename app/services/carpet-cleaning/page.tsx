@@ -47,10 +47,10 @@ const CarpetCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Carpet Cleaning Services in Nepal</title>
+        <title>Carpet Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional carpet cleaning services in Nepal. Remove stains, dust, and allergens with deep cleaning and sanitization for fresh carpets."
+          content="Professional carpet cleaning services in India. Remove stains, dust, and allergens with deep cleaning and sanitization for fresh carpets."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -75,7 +75,7 @@ const CarpetCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold md:text-[52px]">
-              Carpet Cleaning Services in Nepal
+              Carpet Cleaning Services in India
             </h1>
 
             <p className="max-w-[858px] mb-8 text-base md:text-lg leading-relaxed">
@@ -98,7 +98,7 @@ const CarpetCleaning = () => {
         </h2>
 
         <p className="text-gray-700 leading-relaxed mb-6">
-          Our carpet cleaning services in Nepal are designed to deeply clean and restore your carpets. We remove embedded dirt, dust, allergens, and stains to improve cleanliness and indoor air quality.
+          Our carpet cleaning services in India are designed to deeply clean and restore your carpets. We remove embedded dirt, dust, allergens, and stains to improve cleanliness and indoor air quality.
         </p>
 
         <p className="text-gray-700 leading-relaxed mb-6">

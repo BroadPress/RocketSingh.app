@@ -47,10 +47,10 @@ const LiftCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Lift/Elevator Cleaning Services in Nepal</title>
+        <title>Lift/Elevator Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional lift and elevator cleaning services in Nepal including floors, walls, panels, mirrors, buttons, and handrails to ensure hygiene and safety in residential and commercial buildings."
+          content="Professional lift and elevator cleaning services in India including floors, walls, panels, mirrors, buttons, and handrails to ensure hygiene and safety in residential and commercial buildings."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -60,7 +60,7 @@ const LiftCleaning = () => {
       <div className="relative w-full h-[560px] flex items-center justify-center text-white mb-20">
         <img
           src="/services/lift-elevator-cleaning.jpg"
-          alt="Lift Cleaning Services in Nepal"
+          alt="Lift Cleaning Services in India"
           className="absolute inset-0 z-0 object-cover h-full w-full"
         />
         <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
@@ -71,7 +71,7 @@ const LiftCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold text-white md:text-[52px]">
-              Lift & Elevator Cleaning Services in Nepal
+              Lift & Elevator Cleaning Services in India
             </h1>
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Professional lift and elevator cleaning services to maintain hygiene, safety, and a polished look for residential and commercial buildings.

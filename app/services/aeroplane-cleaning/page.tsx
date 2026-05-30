@@ -47,10 +47,10 @@ const AeroplaneCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Aeroplane Cleaning Services in Nepal</title>
+        <title>Aeroplane Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional aeroplane cleaning services in Nepal. Interior cabin cleaning, exterior washing, and aircraft sanitization for private and commercial planes."
+          content="Professional aeroplane cleaning services in India. Interior cabin cleaning, exterior washing, and aircraft sanitization for private and commercial planes."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -75,7 +75,7 @@ const AeroplaneCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold md:text-[52px]">
-              Aeroplane Cleaning Services in Nepal
+              Aeroplane Cleaning Services in India
             </h1>
 
             <p className="max-w-[858px] mb-8 text-base md:text-lg leading-relaxed">
@@ -98,7 +98,7 @@ const AeroplaneCleaning = () => {
         </h2>
 
         <p className="text-gray-700 leading-relaxed mb-6">
-          Our aeroplane cleaning services in Nepal are designed to meet aviation standards, ensuring cleanliness, hygiene, and safety. We provide detailed interior cleaning, including seats, carpets, overhead compartments, and lavatories.
+          Our aeroplane cleaning services in India are designed to meet aviation standards, ensuring cleanliness, hygiene, and safety. We provide detailed interior cleaning, including seats, carpets, overhead compartments, and lavatories.
         </p>
 
         <p className="text-gray-700 leading-relaxed mb-6">

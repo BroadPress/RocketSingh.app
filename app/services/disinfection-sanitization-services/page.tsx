@@ -47,10 +47,10 @@ const HomeCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Disinfection and Sanitization Services in Nepal</title>
+        <title>Disinfection and Sanitization Services in India</title>
         <meta
           name="description"
-          content="Professional disinfection and sanitization services in Nepal to eliminate germs, bacteria, and viruses, providing a healthy and hygienic environment."
+          content="Professional disinfection and sanitization services in India to eliminate germs, bacteria, and viruses, providing a healthy and hygienic environment."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -60,7 +60,7 @@ const HomeCleaning = () => {
       <div className="relative w-full h-[560px] flex items-center justify-center text-white mb-20">
         <img
           src="/services/disinfection-sanitization-services.jpg"
-          alt="Disinfection and Sanitization Services in Nepal"
+          alt="Disinfection and Sanitization Services in India"
           className="absolute inset-0 z-0 object-cover h-full w-full"
         />
         <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
@@ -68,14 +68,14 @@ const HomeCleaning = () => {
           <div className="flex flex-col items-center justify-center h-[277px] px-4 py-8 text-center">
             {/* Breadcrumb */}
             <div className="mb-4 text-sm w-full flex justify-center items-center text-white opacity-90">
-              Home &gt; Services &gt; <span className="font-semibold">Disinfection and Sanitization Services in Nepal</span>
+              Home &gt; Services &gt; <span className="font-semibold">Disinfection and Sanitization Services in India</span>
             </div>
 
             <h1 className="mb-4 text-5xl font-bold text-white md:text-[52px]">
-              Disinfection and Sanitization Services in Nepal
+              Disinfection and Sanitization Services in India
             </h1>
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
-              Professional disinfection and sanitization services in Nepal to eliminate germs, bacteria, and viruses, providing a healthy and hygienic environment.
+              Professional disinfection and sanitization services in India to eliminate germs, bacteria, and viruses, providing a healthy and hygienic environment.
             </p>
             
             <Link href="/book">
@@ -94,7 +94,7 @@ const HomeCleaning = () => {
           Comprehensive Disinfection and Sanitization Services
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
-          Our disinfection and sanitization services in Nepal ensure every corner of your space is free from germs, bacteria, and viruses. We use trained professionals, modern equipment, and eco-friendly products for thorough cleaning and sanitization.
+          Our disinfection and sanitization services in India ensure every corner of your space is free from germs, bacteria, and viruses. We use trained professionals, modern equipment, and eco-friendly products for thorough cleaning and sanitization.
         </p>
         <p className="text-gray-700 leading-relaxed mb-6">
           We take pride in delivering reliable and comprehensive services, creating a healthy and hygienic environment for you and your family.

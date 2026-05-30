@@ -47,10 +47,10 @@ const MarbleTileCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Marble & Tile Cleaning Services in Nepal</title>
+        <title>Marble & Tile Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional marble and tile cleaning services in Nepal including deep cleaning, stain removal, polishing, and maintenance for residential and commercial spaces."
+          content="Professional marble and tile cleaning services in India including deep cleaning, stain removal, polishing, and maintenance for residential and commercial spaces."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -60,7 +60,7 @@ const MarbleTileCleaning = () => {
       <div className="relative w-full h-[560px] flex items-center justify-center text-white mb-20">
         <img
           src="/services/marble-tile-cleaning.jpg"
-          alt="Marble and Tile Cleaning Services in Nepal"
+          alt="Marble and Tile Cleaning Services in India"
           className="absolute inset-0 z-0 object-cover h-full w-full"
         />
         <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
@@ -72,7 +72,7 @@ const MarbleTileCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold text-white md:text-[52px]">
-              Marble & Tile Cleaning Services in Nepal
+              Marble & Tile Cleaning Services in India
             </h1>
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Restore the shine and hygiene of your marble and tile surfaces with professional cleaning, stain removal, and polishing services.

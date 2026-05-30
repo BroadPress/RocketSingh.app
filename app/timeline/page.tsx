@@ -6,7 +6,7 @@ export default function Timeline() {
     {
       year: "2018",
       title: "Company Founded",
-      description: "RocketSingh was established in Kathmandu with a mission to provide reliable and professional cleaning services for homes and businesses.",
+      description: "RocketSingh was established in New Delhi with a mission to provide reliable and professional cleaning services for homes and businesses.",
     },
     {
       year: "2019",
@@ -21,7 +21,7 @@ export default function Timeline() {
     {
       year: "2021",
       title: "Commercial Projects",
-      description: "Successfully handled large-scale commercial cleaning projects for offices, apartments, and business complexes across Kathmandu.",
+      description: "Successfully handled large-scale commercial cleaning projects for offices, apartments, and business complexes across New Delhi.",
     },
     {
       year: "2022",
@@ -41,12 +41,12 @@ export default function Timeline() {
     {
       year: "2025",
       title: "Brand Strengthening",
-      description: "Strengthened brand presence across Kathmandu through digital marketing, partnerships, and consistent service excellence.",
+      description: "Strengthened brand presence across New Delhi through digital marketing, partnerships, and consistent service excellence.",
     },
     {
       year: "2026",
       title: "Innovation & Future Growth",
-      description: "Focused on smart cleaning solutions, eco-friendly practices, and expanding services to new cities across Nepal.",
+      description: "Focused on smart cleaning solutions, eco-friendly practices, and expanding services to new cities across India.",
     },
   ];
 

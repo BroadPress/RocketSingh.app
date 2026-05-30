@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import ServiceCard from "../components/ServiceCard";
 
-const displayLocation = "Kathmandu, Nepal";
+const displayLocation = "New Delhi, India";
 
 const slides = [
   {
@@ -30,7 +30,7 @@ const slides = [
 const sections = {
   about: {
     title: "About RocketSingh",
-    desc: "RocketSingh is a leading professional cleaning company in Kathmandu, Nepal. Any home, office, or commercial cleaning — whether deep cleaning, sanitization, carpet care, or post-construction cleanup — RocketSingh is there for you.",
+    desc: "RocketSingh is a leading professional cleaning company in New Delhi, India. Any home, office, or commercial cleaning — whether deep cleaning, sanitization, carpet care, or post-construction cleanup — RocketSingh is there for you.",
   },
   mission: {
     title: "Our Mission",
@@ -42,7 +42,7 @@ const sections = {
   },
   vision: {
     title: "Our Vision",
-    desc: "To redefine home and commercial cleaning by creating a reliable, modern, and accessible service network that brings convenience and quality workmanship to every customer's doorstep in Nepal.",
+    desc: "To redefine home and commercial cleaning by creating a reliable, modern, and accessible service network that brings convenience and quality workmanship to every customer's doorstep in India.",
   },
 };
 
@@ -200,7 +200,7 @@ export default function Home() {
       {/* EXPERT SERVICES */}
       <section className="bg-white py-20 px-6 sm:px-12 lg:px-20 text-center">
         <h2 className="text-4xl font-extrabold text-teal-900 mb-4">Our Expert Services</h2>
-        <p className="text-gray-700 text-lg mb-12">Our top services — quick, professional, and trusted across Nepal.</p>
+        <p className="text-gray-700 text-lg mb-12">Our top services — quick, professional, and trusted across India.</p>
         <div className="max-w-7xl mx-auto grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {expertServices.map((service) => (
             <ServiceCard key={service.title} image={service.image} title={service.title} desc={service.desc} href={service.href} />
@@ -303,7 +303,7 @@ export default function Home() {
         <a href="https://b.broadpress.org/cleaningsewa" target="_blank" rel="noopener noreferrer" className="w-11 h-11 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
           <img src="/icons/whatsapp.svg" alt="WhatsApp" className="w-6 h-6" />
         </a>
-        <a href="tel:+977981152774" className="w-11 h-11 bg-[#0E4541] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+        <a href="tel:+91981152774" className="w-11 h-11 bg-[#0E4541] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
           <img src="/icons/phone.svg" alt="Phone" className="w-6 h-6" />
         </a>
       </div> */}

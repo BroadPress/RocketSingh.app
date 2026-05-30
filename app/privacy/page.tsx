@@ -110,7 +110,7 @@ const PrivacyPolicy = () => {
               Transfer of Data
             </h2>
             <p className="about leading-relaxed">
-              Your personal data may be transferred to servers located in Nepal, 
+              Your personal data may be transferred to servers located in India, 
               USA, or India. By using our Service, you consent to this transfer. 
               We take reasonable steps to ensure your data is secure.
             </p>
@@ -195,7 +195,7 @@ const PrivacyPolicy = () => {
               Email: privacy@cleaningsewa.com
             </p>
             <p className="about leading-relaxed">
-              Address: RocketSingh, Kathmandu, Nepal
+              Address: RocketSingh, New Delhi, India
             </p>
           </div>
 

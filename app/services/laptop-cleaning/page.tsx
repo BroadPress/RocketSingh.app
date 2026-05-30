@@ -47,10 +47,10 @@ const LaptopCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Laptop Cleaning Services in Nepal</title>
+        <title>Laptop Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional laptop cleaning services in Nepal including keyboard, screen, ports, internal dust removal, and fan cleaning to keep your laptop hygienic and performing optimally."
+          content="Professional laptop cleaning services in India including keyboard, screen, ports, internal dust removal, and fan cleaning to keep your laptop hygienic and performing optimally."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -60,7 +60,7 @@ const LaptopCleaning = () => {
       <div className="relative w-full h-[560px] flex items-center justify-center text-white mb-20">
         <img
           src="/services/laptop-cleaning.jpg"
-          alt="Laptop Cleaning Services in Nepal"
+          alt="Laptop Cleaning Services in India"
           className="absolute inset-0 z-0 object-cover h-full w-full"
         />
         <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
@@ -71,7 +71,7 @@ const LaptopCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold text-white md:text-[52px]">
-              Laptop Cleaning Services in Nepal
+              Laptop Cleaning Services in India
             </h1>
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Professional laptop cleaning services to remove dust, dirt, and grime from keyboards, screens, vents, and internal components. Keep your laptop running smoothly and hygienic.

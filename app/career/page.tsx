@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Career | RocketSingh",
-  description: "Join RocketSingh — career opportunities in professional cleaning services in Kathmandu, Nepal.",
-  keywords: "cleaning jobs Nepal, RocketSingh career, Kathmandu cleaning jobs",
+  description: "Join RocketSingh — career opportunities in professional cleaning services in New Delhi, India.",
+  keywords: "cleaning jobs India, RocketSingh career, New Delhi cleaning jobs",
 };
 
 export default function CareerPage() {

@@ -47,10 +47,10 @@ const BathroomCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Bathroom Cleaning Services in Nepal</title>
+        <title>Bathroom Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional bathroom cleaning services in Nepal. Remove stains, mold, and bacteria for a spotless and hygienic bathroom."
+          content="Professional bathroom cleaning services in India. Remove stains, mold, and bacteria for a spotless and hygienic bathroom."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -75,7 +75,7 @@ const BathroomCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold md:text-[52px]">
-              Bathroom Cleaning Services in Nepal
+              Bathroom Cleaning Services in India
             </h1>
 
             <p className="max-w-[858px] mb-8 text-base md:text-lg leading-relaxed">
@@ -98,7 +98,7 @@ const BathroomCleaning = () => {
         </h2>
 
         <p className="text-gray-700 leading-relaxed mb-6">
-          Our bathroom cleaning services in Nepal ensure deep cleaning and sanitization of every corner. We remove stubborn stains, soap scum, hard water marks, and harmful bacteria from tiles, toilets, sinks, and shower areas.
+          Our bathroom cleaning services in India ensure deep cleaning and sanitization of every corner. We remove stubborn stains, soap scum, hard water marks, and harmful bacteria from tiles, toilets, sinks, and shower areas.
         </p>
 
         <p className="text-gray-700 leading-relaxed mb-6">

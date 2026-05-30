@@ -47,10 +47,10 @@ const AirDuctCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Air Duct & Vent Cleaning Services in Nepal</title>
+        <title>Air Duct & Vent Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional air duct and vent cleaning services in Nepal. Improve indoor air quality, airflow, and remove dust, allergens, and mold from your ventilation system."
+          content="Professional air duct and vent cleaning services in India. Improve indoor air quality, airflow, and remove dust, allergens, and mold from your ventilation system."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -75,7 +75,7 @@ const AirDuctCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold md:text-[52px]">
-              Air Duct & Vent Cleaning Services in Nepal
+              Air Duct & Vent Cleaning Services in India
             </h1>
 
             <p className="max-w-[858px] mb-8 text-base md:text-lg leading-relaxed">
@@ -98,7 +98,7 @@ const AirDuctCleaning = () => {
         </h2>
 
         <p className="text-gray-700 leading-relaxed mb-6">
-          Our air duct and vent cleaning services in Nepal help maintain a clean and efficient ventilation system. Over time, dust, allergens, and contaminants accumulate inside ducts, affecting airflow and indoor air quality.
+          Our air duct and vent cleaning services in India help maintain a clean and efficient ventilation system. Over time, dust, allergens, and contaminants accumulate inside ducts, affecting airflow and indoor air quality.
         </p>
 
         <p className="text-gray-700 leading-relaxed mb-6">

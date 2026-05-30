@@ -47,10 +47,10 @@ const ReserveTankCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Reserve Tank Cleaning Services in Nepal</title>
+        <title>Reserve Tank Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional reserve tank cleaning services in Nepal. We clean, disinfect, and maintain water storage tanks for homes, apartments, and commercial properties."
+          content="Professional reserve tank cleaning services in India. We clean, disinfect, and maintain water storage tanks for homes, apartments, and commercial properties."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -60,7 +60,7 @@ const ReserveTankCleaning = () => {
       <div className="relative w-full h-[560px] flex items-center justify-center text-white mb-20">
         <img
           src="/services/reserve-tank-cleaning.jpg"
-          alt="Reserve Tank Cleaning Services in Nepal"
+          alt="Reserve Tank Cleaning Services in India"
           className="absolute inset-0 z-0 object-cover h-full w-full"
         />
         <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
@@ -72,7 +72,7 @@ const ReserveTankCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold text-white md:text-[52px]">
-              Reserve Tank Cleaning Services in Nepal
+              Reserve Tank Cleaning Services in India
             </h1>
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Professional cleaning and disinfection of water storage tanks for homes, apartments, and commercial properties to ensure safe and hygienic water.

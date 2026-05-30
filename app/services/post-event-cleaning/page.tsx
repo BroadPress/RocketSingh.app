@@ -47,10 +47,10 @@ const PostEventCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Post Event Cleaning Services in Nepal</title>
+        <title>Post Event Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional post event cleaning services in Nepal. Fast and efficient cleanup for parties, weddings, and corporate events. Keep your venue spotless."
+          content="Professional post event cleaning services in India. Fast and efficient cleanup for parties, weddings, and corporate events. Keep your venue spotless."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -60,7 +60,7 @@ const PostEventCleaning = () => {
       <div className="relative w-full h-[560px] flex items-center justify-center text-white mb-20">
         <img
           src="/services/post-event-cleaning.jpg"
-          alt="Post Event Cleaning Services in Nepal"
+          alt="Post Event Cleaning Services in India"
           className="absolute inset-0 z-0 object-cover h-full w-full"
         />
         <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
@@ -74,7 +74,7 @@ const PostEventCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold md:text-[52px]">
-              Post Event Cleaning Services in Nepal
+              Post Event Cleaning Services in India
             </h1>
 
             <p className="max-w-[858px] mb-8 text-base md:text-lg leading-relaxed">
@@ -101,7 +101,7 @@ const PostEventCleaning = () => {
         </h2>
 
         <p className="text-gray-700 leading-relaxed mb-6">
-          Our post event cleaning services in Nepal are designed to handle the
+          Our post event cleaning services in India are designed to handle the
           complete cleanup after any type of event, including weddings, parties,
           concerts, and corporate gatherings. We efficiently remove trash,
           leftover decorations, food waste, and spills, ensuring your venue is

@@ -13,7 +13,7 @@ const sections = {
   },
   goals: {
     title: "Our Goals",
-    desc: "We aim to simplify everyday maintenance by delivering efficient deep cleaning, sanitization, and facility care that enhance comfort, hygiene, and long-term value for every client across Nepal.",
+    desc: "We aim to simplify everyday maintenance by delivering efficient deep cleaning, sanitization, and facility care that enhance comfort, hygiene, and long-term value for every client across India.",
   },
   vision: {
     title: "Our Vision",

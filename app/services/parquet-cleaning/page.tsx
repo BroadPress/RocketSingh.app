@@ -46,10 +46,10 @@ const ParquetCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Parquet Cleaning Services in Nepal</title>
+        <title>Parquet Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional parquet cleaning services in Nepal. Deep cleaning, polishing, and maintenance for wooden floors to restore shine and remove dust, stains, and scratches."
+          content="Professional parquet cleaning services in India. Deep cleaning, polishing, and maintenance for wooden floors to restore shine and remove dust, stains, and scratches."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -59,7 +59,7 @@ const ParquetCleaning = () => {
       <div className="relative w-full h-[560px] flex items-center justify-center text-white mb-20">
         <img
           src="/services/parquet-cleaning.jpg"
-          alt="Parquet Cleaning Services in Nepal"
+          alt="Parquet Cleaning Services in India"
           className="absolute inset-0 z-0 object-cover h-full w-full"
         />
         <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
@@ -71,7 +71,7 @@ const ParquetCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold text-white md:text-[52px]">
-              Parquet Cleaning Services in Nepal
+              Parquet Cleaning Services in India
             </h1>
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Professional parquet floor cleaning, polishing, and maintenance services. Keep your wooden floors spotless, shiny, and long-lasting.
@@ -91,7 +91,7 @@ const ParquetCleaning = () => {
           Key Parquet Cleaning Services
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
-          Our parquet cleaning services in Nepal ensure that your wooden floors are deep cleaned, polished, and protected. We use professional techniques and eco-friendly products for spotless and durable parquet floors.
+          Our parquet cleaning services in India ensure that your wooden floors are deep cleaned, polished, and protected. We use professional techniques and eco-friendly products for spotless and durable parquet floors.
         </p>
         <p className="text-gray-700 leading-relaxed mb-6">
           Regular parquet cleaning enhances the beauty and longevity of your floors, maintaining a healthy and elegant living space.

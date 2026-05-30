@@ -18,7 +18,7 @@ export const serviceCategories: ServiceCategory[] = [
         title: "Home Cleaning",
         slug: "home-cleaning",
         image: "/services/home-cleaning.jpg",
-        desc: "Comprehensive home cleaning covering living rooms, bedrooms, kitchens, and bathrooms. We remove dust, dirt, stains, and allergens to maintain a spotless, fresh, and healthy home environment across Nepal.",
+        desc: "Comprehensive home cleaning covering living rooms, bedrooms, kitchens, and bathrooms. We remove dust, dirt, stains, and allergens to maintain a spotless, fresh, and healthy home environment across India.",
       },
       {
         title: "Kitchen Cleaning",

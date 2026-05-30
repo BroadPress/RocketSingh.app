@@ -7,8 +7,8 @@ export default function CorporateHouseCleaning() {
     <ServicePageLayout
       serviceName="Corporate House Cleaning"
       heroImage="/services/corporate-house-cleaning.jpg"
-      heroTitle="Corporate & Monthly Cleaning Services in Nepal"
-      heroDescription="Regular office cleaning, common area sanitization, and monthly deep cleaning packages for businesses across Nepal."
+      heroTitle="Corporate & Monthly Cleaning Services in India"
+      heroDescription="Regular office cleaning, common area sanitization, and monthly deep cleaning packages for businesses across India."
       bookLabel="Book Corporate Cleaning Service"
       introTitle="Professional Corporate Cleaning Plans"
       introParagraphs={[
@@ -18,7 +18,7 @@ export default function CorporateHouseCleaning() {
       scopeItems={[
         { title: "Daily Office Cleaning", description: "Desk sanitization, floor maintenance, restroom cleaning, and trash removal.", image: "/services/corporate-house-cleaning.jpg", imageAlt: "Office Cleaning" },
         { title: "Monthly Deep Cleaning", description: "Comprehensive deep cleaning of carpets, windows, ducts, and hard-to-reach areas.", image: "/services/monthly-cleaning.jpg", imageAlt: "Deep Cleaning" },
-        { title: "Custom Contracts", description: "Flexible packages for businesses of all sizes across Kathmandu and Nepal.", image: "/services/corporate-house-cleaning.jpg", imageAlt: "Custom Contracts" },
+        { title: "Custom Contracts", description: "Flexible packages for businesses of all sizes across New Delhi and India.", image: "/services/corporate-house-cleaning.jpg", imageAlt: "Custom Contracts" },
       ]}
       faqs={[
         { id: 1, question: "What corporate cleaning plans are available?", answer: "We offer daily, weekly, bi-weekly, and monthly cleaning packages including deep cleaning add-ons for offices and commercial spaces." },

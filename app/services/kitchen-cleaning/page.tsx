@@ -47,10 +47,10 @@ const KitchenCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Kitchen Cleaning Services in Nepal</title>
+        <title>Kitchen Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional kitchen cleaning services in Nepal including deep cleaning of countertops, sinks, cabinets, appliances, tiles, and floors for a hygienic kitchen."
+          content="Professional kitchen cleaning services in India including deep cleaning of countertops, sinks, cabinets, appliances, tiles, and floors for a hygienic kitchen."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -60,7 +60,7 @@ const KitchenCleaning = () => {
       <div className="relative w-full h-[560px] flex items-center justify-center text-white mb-20">
         <img
           src="/services/kitchen-cleaning.jpg"
-          alt="Kitchen Cleaning Services in Nepal"
+          alt="Kitchen Cleaning Services in India"
           className="absolute inset-0 z-0 object-cover h-full w-full"
         />
         <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
@@ -71,7 +71,7 @@ const KitchenCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold text-white md:text-[52px]">
-              Kitchen Cleaning Services in Nepal
+              Kitchen Cleaning Services in India
             </h1>
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Professional kitchen cleaning services for homes and apartments. Deep cleaning of countertops, cabinets, sinks, appliances, and floors to ensure a spotless and hygienic kitchen.
@@ -93,7 +93,7 @@ const KitchenCleaning = () => {
           Comprehensive Kitchen Cleaning Services
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
-          Our kitchen cleaning services in Nepal ensure every corner of your kitchen is hygienic and sparkling clean. We use trained professionals, modern equipment, and safe cleaning products to remove grease, grime, and bacteria.
+          Our kitchen cleaning services in India ensure every corner of your kitchen is hygienic and sparkling clean. We use trained professionals, modern equipment, and safe cleaning products to remove grease, grime, and bacteria.
         </p>
         <p className="text-gray-700 leading-relaxed mb-6">
           We aim to create a healthy and safe cooking environment for you and your family with thorough and reliable kitchen cleaning.

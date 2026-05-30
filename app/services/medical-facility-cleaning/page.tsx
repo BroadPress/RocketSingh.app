@@ -47,10 +47,10 @@ const MedicalCleaning = () => {
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Medical Facility Cleaning Services in Nepal</title>
+        <title>Medical Facility Cleaning Services in India</title>
         <meta
           name="description"
-          content="Professional medical facility cleaning services in Nepal including sterilization, disinfection, operating theater cleaning, patient room cleaning, and waiting area maintenance."
+          content="Professional medical facility cleaning services in India including sterilization, disinfection, operating theater cleaning, patient room cleaning, and waiting area maintenance."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -60,7 +60,7 @@ const MedicalCleaning = () => {
       <div className="relative w-full h-[560px] flex items-center justify-center text-white mb-20">
         <img
           src="/services/medical-facility-cleaning.jpg"
-          alt="Medical Facility Cleaning Services in Nepal"
+          alt="Medical Facility Cleaning Services in India"
           className="absolute inset-0 z-0 object-cover h-full w-full"
         />
         <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
@@ -72,7 +72,7 @@ const MedicalCleaning = () => {
             </div>
 
             <h1 className="mb-4 text-5xl font-bold text-white md:text-[52px]">
-              Medical Facility Cleaning Services in Nepal
+              Medical Facility Cleaning Services in India
             </h1>
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Professional cleaning and sterilization services for hospitals, clinics, labs, and medical offices to ensure safe and hygienic environments for patients and staff.

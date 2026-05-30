@@ -7,8 +7,8 @@ export default function GardenCleaning() {
     <ServicePageLayout
       serviceName="Garden Cleaning"
       heroImage="/services/garden-cleaning.jpg"
-      heroTitle="Garden Cleaning Services in Nepal"
-      heroDescription="Professional garden maintenance including trimming, leaf removal, pathway cleaning, and outdoor space sanitization across Nepal."
+      heroTitle="Garden Cleaning Services in India"
+      heroDescription="Professional garden maintenance including trimming, leaf removal, pathway cleaning, and outdoor space sanitization across India."
       bookLabel="Book Garden Cleaning Service"
       introTitle="Expert Garden & Outdoor Cleaning"
       introParagraphs={[
@@ -24,7 +24,7 @@ export default function GardenCleaning() {
         { id: 1, question: "What does garden cleaning include?", answer: "Lawn mowing, hedge trimming, leaf removal, weed control, flowerbed maintenance, and general outdoor tidying." },
         { id: 2, question: "Do you use eco-friendly products?", answer: "Yes, we use eco-friendly fertilizers and safe cleaning products to protect plants, pets, and the environment." },
         { id: 3, question: "Can I schedule recurring garden maintenance?", answer: "We offer weekly, bi-weekly, or monthly garden cleaning packages to keep your outdoor spaces pristine year-round." },
-        { id: 4, question: "Do you handle commercial gardens?", answer: "Absolutely. We service private gardens, apartment complexes, hotels, and commercial landscapes across Nepal." },
+        { id: 4, question: "Do you handle commercial gardens?", answer: "Absolutely. We service private gardens, apartment complexes, hotels, and commercial landscapes across India." },
         { id: 5, question: "How can I book garden cleaning?", answer: "Book online or contact RocketSingh. Our team will confirm your appointment promptly." },
       ]}
     />
