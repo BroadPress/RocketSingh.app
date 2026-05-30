@@ -4,7 +4,6 @@ import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 
 const TRIGGER_ID = 'back-to-top-trigger';
-const TESTIMONIALS_ID = 'testimonials-section';
 
 const BacktoTop = () => {
   const pathname = usePathname();
@@ -12,29 +11,24 @@ const BacktoTop = () => {
 
   useEffect(() => {
     const updateVisibility = () => {
-      const trigger = document.getElementById(TRIGGER_ID);
-      const testimonials = document.getElementById(TESTIMONIALS_ID);
-      const isMobile = window.innerWidth < 768;
-
-      if (isMobile && trigger) {
-        if (window.scrollY <= 0) {
-          setVisible(false);
-          return;
-        }
-
-        const rect = trigger.getBoundingClientRect();
-        setVisible((prev) => prev || rect.top <= window.innerHeight * 0.78);
-        return;
-      }
-
-      if (!testimonials) {
+      if (pathname !== '/') {
         setVisible(false);
         return;
       }
 
-      const testimonialsTop =
-        testimonials.getBoundingClientRect().top + window.scrollY;
-      setVisible(window.scrollY >= testimonialsTop);
+      if (window.scrollY <= 0) {
+        setVisible(false);
+        return;
+      }
+
+      const trigger = document.getElementById(TRIGGER_ID);
+      if (!trigger) {
+        setVisible(false);
+        return;
+      }
+
+      const { top } = trigger.getBoundingClientRect();
+      setVisible((prev) => prev || top <= window.innerHeight * 0.92);
     };
 
     updateVisibility();

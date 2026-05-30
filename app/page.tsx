@@ -222,6 +222,7 @@ export default function Home() {
             That&apos;s where our team comes in — to take the burden off your shoulders.
           </p>
         </div>
+        <div id="back-to-top-trigger" aria-hidden="true" className="h-0 w-full" />
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-4">
             {Object.keys(sections).map((key) => (
@@ -262,8 +263,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <div id="back-to-top-trigger" aria-hidden="true" className="h-0 w-full" />
 
       {/* TESTIMONIALS */}
       <section id="testimonials-section" className="bg-gradient-to-r from-teal-50 via-white to-teal-50 py-20 px-6 sm:px-12 lg:px-20 text-center">
