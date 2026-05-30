@@ -214,7 +214,7 @@ export default function Home() {
       </section>
 
       {/* ABOUT TABS */}
-      <section className="bg-gradient-to-b from-white via-teal-50 to-white py-20 px-6 sm:px-12 lg:px-20">
+      <section id="about-section" className="bg-gradient-to-b from-white via-teal-50 to-white py-20 px-6 sm:px-12 lg:px-20">
         <div className="text-center mb-14">
           <h2 className="text-4xl sm:text-5xl font-extrabold text-teal-900 mb-4 tracking-wide">About Us</h2>
           <p className="text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed">
@@ -263,8 +263,10 @@ export default function Home() {
         </div>
       </section>
 
+      <div id="back-to-top-trigger" aria-hidden="true" className="h-0 w-full" />
+
       {/* TESTIMONIALS */}
-      <section className="bg-gradient-to-r from-teal-50 via-white to-teal-50 py-20 px-6 sm:px-12 lg:px-20 text-center">
+      <section id="testimonials-section" className="bg-gradient-to-r from-teal-50 via-white to-teal-50 py-20 px-6 sm:px-12 lg:px-20 text-center">
         <h2 className="text-4xl font-extrabold text-teal-900 mb-10">Testimonials</h2>
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
           {testimonials.map((t) => (
