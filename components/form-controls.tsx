@@ -299,9 +299,10 @@ export type MultiServiceSelectProps = {
   options: readonly string[];
   values: string[];
   onChange: (values: string[]) => void;
+  addButtonLabel?: string;
 };
 
-/** "+ Add service" multi-select (tackles.pro style). */
+/** "+ Add …" multi-select chips (tackles.pro style). */
 export function MultiServiceSelect({
   id,
   label,
@@ -309,6 +310,7 @@ export function MultiServiceSelect({
   options,
   values,
   onChange,
+  addButtonLabel = "Add service",
 }: MultiServiceSelectProps) {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
@@ -342,7 +344,7 @@ export function MultiServiceSelect({
             onClick={() => setOpen((o) => !o)}
           >
             <span className="text-lg leading-none text-gray-600">+</span>
-            Add service
+            {addButtonLabel}
           </button>
           {values.map((v) => (
             <span
@@ -488,6 +490,115 @@ export function PhotoDropzone({
             </li>
           ))}
         </ul>
+      ) : null}
+    </div>
+  );
+}
+
+export type FileDropzoneProps = {
+  inputId: string;
+  label: string;
+  required?: boolean;
+  accept: string;
+  hint: string;
+  dragOver: boolean;
+  onDragOver: (e: React.DragEvent) => void;
+  onDragLeave: () => void;
+  onDrop: (e: React.DragEvent) => void;
+  onBrowse: (files: FileList | null) => void;
+  disabled?: boolean;
+  file: { name: string; previewUrl?: string } | null;
+  onRemove: () => void;
+  inputRef: React.RefObject<HTMLInputElement | null>;
+};
+
+/** Single-file drop zone (ID proof, resume) — same size as PhotoDropzone. */
+export function FileDropzone({
+  inputId,
+  label,
+  required,
+  accept,
+  hint,
+  dragOver,
+  onDragOver,
+  onDragLeave,
+  onDrop,
+  onBrowse,
+  disabled,
+  file,
+  onRemove,
+  inputRef,
+}: FileDropzoneProps) {
+  return (
+    <div className="flex flex-col gap-2">
+      <span className={fieldLabelClass()}>
+        {label}
+        {required ? <span className="text-red-600"> *</span> : null}
+      </span>
+      <label
+        htmlFor={inputId}
+        onDragOver={onDragOver}
+        onDragLeave={onDragLeave}
+        onDrop={onDrop}
+        className={`flex min-h-[140px] cursor-pointer flex-col items-center justify-center rounded border-2 border-dashed px-4 py-8 text-center transition-colors ${
+          dragOver
+            ? "border-gray-500 bg-gray-50"
+            : "border-gray-300 bg-white hover:border-gray-400 hover:bg-gray-50/50"
+        } ${disabled ? "pointer-events-none opacity-60" : ""}`}
+      >
+        <svg
+          className="mb-2 h-8 w-8 text-gray-400"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+          />
+        </svg>
+        <span className="text-[15px] text-gray-700">
+          Drop files here or{" "}
+          <span className="text-blue-600 underline">browse</span>
+        </span>
+        <span className="mt-1 text-[12px] text-gray-500">{hint}</span>
+        <input
+          ref={inputRef}
+          id={inputId}
+          type="file"
+          accept={accept}
+          className="sr-only"
+          disabled={disabled}
+          onChange={(e) => onBrowse(e.target.files)}
+        />
+      </label>
+      {file ? (
+        <div className="flex items-start gap-3 rounded border border-gray-200 bg-gray-50 p-3">
+          {file.previewUrl ? (
+            <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded border border-gray-200 bg-white">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={file.previewUrl}
+                alt={file.name}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          ) : null}
+          <div className="min-w-0 flex-1">
+            <p className="truncate text-[14px] text-gray-800">{file.name}</p>
+          </div>
+          <button
+            type="button"
+            className="shrink-0 text-[14px] text-gray-500 hover:text-gray-900"
+            aria-label={`Remove ${file.name}`}
+            onClick={onRemove}
+          >
+            ×
+          </button>
+        </div>
       ) : null}
     </div>
   );
