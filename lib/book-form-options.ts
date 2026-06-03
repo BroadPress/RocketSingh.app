@@ -154,5 +154,8 @@ export const REFERRAL_SOURCES = [
   "Other",
 ] as const;
 
+/** Exact Airtable Booking column name (attachment field). */
+export const BOOKING_PHOTO_FIELD = "Add photos/ picture";
+
 export const MAX_PHOTO_BYTES = 5 * 1024 * 1024;
 export const MAX_PHOTOS = 5;

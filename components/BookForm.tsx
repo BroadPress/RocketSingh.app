@@ -13,6 +13,7 @@ import {
 } from "@/components/form-controls";
 import {
   BOOKING_CITY,
+  BOOKING_PHOTO_FIELD,
   BOOKING_PRIORITIES,
   BOOKING_SERVICES,
   BOOKING_SHIFTS,
@@ -458,7 +459,7 @@ export default function BookForm() {
 
         <PhotoDropzone
           inputId={`${formId}-photos`}
-          label="Add photos/ picture"
+          label={BOOKING_PHOTO_FIELD}
           photoCount={photoItems.length}
           maxPhotos={MAX_PHOTOS}
           dragOver={photoDragOver}

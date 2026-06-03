@@ -1,3 +1,4 @@
+import { BOOKING_PHOTO_FIELD } from "@/lib/book-form-options";
 import { formatAirtableEnvError, getAirtableEnv } from "@/lib/airtable-env";
 
 const AIRTABLE_API = "https://api.airtable.com/v0";
@@ -81,14 +82,7 @@ export async function resolveBookingPhotoField(
     (f) => f.type === "multipleAttachments",
   );
 
-  const preferred = attachmentFields.find(
-    (f) => f.name === "Add photos/ picture",
-  );
-  const byKeyword =
-    attachmentFields.find((f) => /add photos|picture|photo/i.test(f.name)) ??
-    attachmentFields[0];
-
-  const field = preferred ?? byKeyword;
+  const field = attachmentFields.find((f) => f.name === BOOKING_PHOTO_FIELD);
   if (!field) return null;
 
   bookingPhotoFieldCache = { id: field.id, name: field.name };
@@ -334,10 +328,23 @@ export async function setAttachmentUrls(
     },
   );
 
-  const data = (await res.json()) as { error?: { message: string } };
+  const data = (await res.json()) as {
+    fields?: Record<string, Array<{ id?: string; url?: string }> | undefined>;
+    error?: { message: string };
+  };
   if (!res.ok) {
     throw new Error(
       data.error?.message ?? `Attachment update failed (${res.status})`,
     );
+  }
+
+  if (urls.length > 0) {
+    const stored = data.fields?.[fieldName];
+    if (!Array.isArray(stored) || stored.length === 0) {
+      throw new Error(
+        `Airtable did not store attachments on "${fieldName}". ` +
+          "Ensure the URL is publicly reachable (use Vercel Blob on production).",
+      );
+    }
   }
 }

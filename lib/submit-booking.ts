@@ -10,6 +10,7 @@ import {
 } from "@/lib/airtable";
 import { formatAirtableEnvError, getAirtableEnv } from "@/lib/airtable-env";
 import { publishFilesForAirtable } from "@/lib/attachment-staging";
+import { BOOKING_PHOTO_FIELD } from "@/lib/book-form-options";
 import { emailValidationError } from "@/lib/form-validation";
 
 /**
@@ -19,8 +20,6 @@ import { emailValidationError } from "@/lib/form-validation";
  */
 
 const DEFAULT_STATUS = "New / Open";
-
-const PHOTO_FIELD = "Add photos/ picture";
 
 function readBookingsTableName(): string {
   const nameRaw = process.env["AIRTABLE_BOOKINGS_TABLE_NAME"];
@@ -274,44 +273,54 @@ async function uploadPhotos(
   tablePath: string,
   photos: File[],
 ): Promise<string[]> {
-  const photoField =
-    (await resolveBookingPhotoField(tablePath)) ?? {
-      id: "",
-      name: PHOTO_FIELD,
-    };
-  const fieldName = photoField.name;
+  const photoField = await resolveBookingPhotoField(tablePath);
+  const fieldId = photoField?.id;
   const failures: string[] = [];
 
   for (const file of photos) {
-    let uploaded = false;
-
-    for (const fieldRef of [photoField.id, fieldName].filter(Boolean)) {
-      try {
-        await uploadAttachmentToField(recordId, fieldRef, file);
-        uploaded = true;
-        break;
-      } catch {
-        /* direct base64 upload often 404 — try URL fallback */
-      }
-    }
-    if (uploaded) continue;
+    const fieldRef = fieldId ?? BOOKING_PHOTO_FIELD;
 
     try {
-      const [url] = await publishFilesForAirtable([file], request);
-      let existing: Awaited<ReturnType<typeof getRecordAttachments>> = [];
-      try {
-        existing = await getRecordAttachments(recordId, fieldName, tablePath);
-      } catch {
-        /* still try URL-only upload */
+      await uploadAttachmentToField(recordId, fieldRef, file);
+      continue;
+    } catch (directErr) {
+      if (fieldId && fieldRef === fieldId) {
+        try {
+          await uploadAttachmentToField(recordId, BOOKING_PHOTO_FIELD, file);
+          continue;
+        } catch {
+          /* URL fallback below (same as nepalmotor.com) */
+        }
       }
-      await setAttachmentUrls(recordId, fieldName, [url], existing, tablePath);
-    } catch (err) {
-      const detail = err instanceof Error ? err.message : "";
-      failures.push(
-        detail && /localhost|ngrok|public url/i.test(detail)
-          ? `${file.name}: ${detail}`
-          : file.name,
-      );
+
+      try {
+        const [url] = await publishFilesForAirtable([file], request);
+        let existing: Awaited<ReturnType<typeof getRecordAttachments>> = [];
+        try {
+          existing = await getRecordAttachments(
+            recordId,
+            BOOKING_PHOTO_FIELD,
+            tablePath,
+          );
+        } catch {
+          /* still try URL-only upload */
+        }
+        await setAttachmentUrls(
+          recordId,
+          BOOKING_PHOTO_FIELD,
+          [url],
+          existing,
+          tablePath,
+        );
+      } catch (fallbackErr) {
+        const directMsg =
+          directErr instanceof Error ? directErr.message : "Upload failed";
+        const fallbackMsg =
+          fallbackErr instanceof Error
+            ? fallbackErr.message
+            : "Upload failed";
+        failures.push(`${file.name}: ${directMsg}; ${fallbackMsg}`);
+      }
     }
   }
 

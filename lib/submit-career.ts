@@ -210,22 +210,24 @@ async function uploadFile(
   try {
     await uploadAttachmentToField(recordId, field, file);
     return null;
-  } catch {
-    /* fall through to public URL upload */
-  }
-
-  try {
-    const [url] = await publishFilesForAirtable([file], request);
-    let existing: Awaited<ReturnType<typeof getRecordAttachments>> = [];
+  } catch (directErr) {
     try {
-      existing = await getRecordAttachments(recordId, field, tablePath);
-    } catch {
-      /* still try URL-only upload */
+      const [url] = await publishFilesForAirtable([file], request);
+      let existing: Awaited<ReturnType<typeof getRecordAttachments>> = [];
+      try {
+        existing = await getRecordAttachments(recordId, field, tablePath);
+      } catch {
+        /* still try URL-only upload */
+      }
+      await setAttachmentUrls(recordId, field, [url], existing, tablePath);
+      return null;
+    } catch (fallbackErr) {
+      const directMsg =
+        directErr instanceof Error ? directErr.message : "Upload failed";
+      const fallbackMsg =
+        fallbackErr instanceof Error ? fallbackErr.message : "Upload failed";
+      return `${file.name}: ${directMsg}; ${fallbackMsg}`;
     }
-    await setAttachmentUrls(recordId, field, [url], existing, tablePath);
-    return null;
-  } catch {
-    return file.name;
   }
 }
 
