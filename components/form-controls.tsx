@@ -467,17 +467,17 @@ export function PhotoDropzone({
         />
       </label>
       {previews.length > 0 ? (
-        <ul className="grid grid-cols-3 gap-2 sm:grid-cols-5">
+        <ul className="flex flex-wrap gap-2">
           {previews.map((item, i) => (
             <li
               key={item.id}
-              className="relative aspect-square overflow-hidden rounded border border-gray-200 bg-gray-100"
+              className="relative h-24 w-24 shrink-0 overflow-hidden rounded border border-gray-200 bg-gray-100 sm:h-28 sm:w-28"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={item.url}
                 alt={item.name || `Photo ${i + 1}`}
-                className="h-full w-full object-cover"
+                className="block h-full w-full object-cover"
               />
               <button
                 type="button"
