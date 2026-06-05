@@ -29,6 +29,8 @@ export default function Contact() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [touched, setTouched] = useState<Record<string, boolean>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const validate = (field: string, value: string) => {
     const newErrors = { ...errors };
@@ -66,8 +68,9 @@ export default function Contact() {
     validate(name, value);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setSubmitError(null);
     const allTouched = { fullName: true, email: true, phone: true, message: true };
     setTouched(allTouched);
     validate("fullName", form.fullName);
@@ -80,10 +83,36 @@ export default function Contact() {
     if (form.phone && !/^\d{7,15}$/.test(form.phone)) return;
     if (!form.message || form.message.trim().length < 10) return;
 
-    setSubmitted(true);
-    setForm({ fullName: "", email: "", phone: "", city: "", message: "" });
-    setErrors({});
-    setTouched({});
+    setSubmitting(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          fullName: form.fullName.trim(),
+          email: form.email.trim(),
+          phone: form.phone.trim(),
+          city: form.city.trim(),
+          message: form.message.trim(),
+        }),
+      });
+
+      const json = (await res.json()) as { ok?: boolean; error?: string };
+
+      if (!res.ok || !json.ok) {
+        setSubmitError(json.error ?? "There was a problem sending your message. Please try again.");
+        return;
+      }
+
+      setSubmitted(true);
+      setForm({ fullName: "", email: "", phone: "", city: "", message: "" });
+      setErrors({});
+      setTouched({});
+    } catch {
+      setSubmitError("We could not submit your message. Please try again later.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -161,11 +190,17 @@ export default function Contact() {
                 />
                 {errors.message && touched.message && <p className="text-red-500 text-xs mt-1">{errors.message}</p>}
               </div>
+              {submitError ? (
+                <p role="alert" className="text-red-600 text-sm text-center">
+                  {submitError}
+                </p>
+              ) : null}
               <button
                 type="submit"
-                className="bg-gradient-to-r from-[#0E4541] via-teal-800 to-teal-700 hover:from-teal-900 text-white px-8 py-3 rounded-lg text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-500"
+                disabled={submitting}
+                className="bg-gradient-to-r from-[#0E4541] via-teal-800 to-teal-700 hover:from-teal-900 text-white px-8 py-3 rounded-lg text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-500 disabled:opacity-60"
               >
-                Send Message
+                {submitting ? "Sending…" : "Send Message"}
               </button>
             </form>
           )}
