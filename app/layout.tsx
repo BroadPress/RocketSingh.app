@@ -2,6 +2,7 @@
 import './globals.css';
 import Script from 'next/script';
 import LayoutChrome from '../components/LayoutChrome';
+import GoogleAnalytics from '../components/GoogleAnalytics';
 import { Suspense } from 'react';
 
 
@@ -71,6 +72,8 @@ export default function RootLayout({ children }:Readonly<{
         </Script>
       </head>
       <body>
+        <GoogleAnalytics />
+
         {/* Google Tag Manager noscript */}
         <noscript>
           <iframe
