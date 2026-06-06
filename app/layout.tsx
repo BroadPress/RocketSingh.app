@@ -39,7 +39,8 @@ export default function RootLayout({ children }:Readonly<{
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/png" href="/logo/rocketsingh-logo.png" />
+        <link rel="icon" type="image/png" href="/favicon/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon/favicon.png" />
         <link rel="manifest" href="/manifest.json" />
 
         {/* Google Tag Manager */}
