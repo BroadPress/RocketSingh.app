@@ -67,6 +67,7 @@ export default function FeedbackForm() {
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitWarning, setSubmitWarning] = useState<string | null>(null);
   const [emailError, setEmailError] = useState<string | null>(null);
 
   const resetFields = useCallback(() => {
@@ -92,6 +93,7 @@ export default function FeedbackForm() {
   const clear = () => {
     resetFields();
     setSubmitSuccess(false);
+    setSubmitWarning(null);
   };
 
   const setHeadshot = (files: FileList | null) => {
@@ -119,6 +121,7 @@ export default function FeedbackForm() {
     e.preventDefault();
     setSubmitError(null);
     setSubmitSuccess(false);
+    setSubmitWarning(null);
 
     const emailErr = emailValidationError(email);
     setEmailError(emailErr);
@@ -148,12 +151,42 @@ export default function FeedbackForm() {
 
     setSubmitting(true);
     try {
-      // Design-only — Airtable integration pending
-      await new Promise((resolve) => setTimeout(resolve, 600));
+      const data = new FormData();
+      data.append("firstName", firstName.trim());
+      data.append("middleName", middleName.trim());
+      data.append("lastName", lastName.trim());
+      data.append("country", country.trim());
+      data.append("organization", organization.trim());
+      data.append("designation", designation.trim());
+      data.append("phone", phone);
+      data.append("email", email.trim());
+      data.append("service", service);
+      data.append("message", message.trim());
+      if (headshotItem?.file) data.append("headshot", headshotItem.file);
+
+      const res = await fetch("/api/feedback", {
+        method: "POST",
+        body: data,
+      });
+
+      const json = (await res.json()) as {
+        ok?: boolean;
+        error?: string;
+        warning?: string;
+      };
+
+      if (!res.ok || !json.ok) {
+        setSubmitError(json.error ?? "Submission failed. Please try again.");
+        return;
+      }
+
       resetFields();
       setSubmitSuccess(true);
+      setSubmitWarning(json.warning ?? null);
     } catch {
-      setSubmitError("Something went wrong. Please try again.");
+      setSubmitError(
+        "Network error. Please check your connection and try again.",
+      );
     } finally {
       setSubmitting(false);
     }
@@ -372,12 +405,16 @@ export default function FeedbackForm() {
         ) : null}
 
         {submitSuccess ? (
-          <p
-            role="status"
-            className="rounded border border-green-200 bg-green-50 px-3 py-2 text-[13px] text-green-800"
-          >
-            Thank you! Your feedback has been submitted successfully.
-          </p>
+          <div role="status" className="space-y-2">
+            <p className="rounded border border-green-200 bg-green-50 px-3 py-2 text-[13px] text-green-800">
+              Thank you! Your feedback has been submitted successfully.
+            </p>
+            {submitWarning ? (
+              <p className="rounded border border-amber-200 bg-amber-50 px-3 py-2 text-[13px] text-amber-900">
+                {submitWarning}
+              </p>
+            ) : null}
+          </div>
         ) : null}
 
         <div className="flex items-center justify-between pt-2">
