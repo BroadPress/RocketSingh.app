@@ -2,7 +2,11 @@ export function rebrandText(text: string): string {
   return text
     .replace(/TACKLES Pro/gi, "RocketSingh")
     .replace(/TACKLES/gi, "RocketSingh")
-    .replace(/tackles\.pro/gi, "cleaningsewa.com")
+    .replace(/tackles\.pro/gi, "rocketsingh.com")
+    .replace(/cleaningsewa\.com/gi, "rocketsingh.com")
+    .replace(/cleaningswea\.com/gi, "rocketsingh.com")
+    .replace(/support@cleaningsewa\.com/gi, "support@rocketsingh.com")
+    .replace(/support@cleaningswea\.com/gi, "support@rocketsingh.com")
     .replace(/San Francisco/gi, "Chennai, India")
     .replace(/handyman/gi, "cleaning")
     .replace(/Handyman/gi, "Cleaning")

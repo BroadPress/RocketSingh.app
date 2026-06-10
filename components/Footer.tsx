@@ -157,7 +157,7 @@ const Footer = () => {
             <a href="#" className="flex items-center hover:opacity-60 transition hover:scale-110">
               <img src={`/icons/x.svg`} className="h-5 w-5 sm:h-6 sm:w-6 cursor-pointer" />
             </a>
-            <a href="https://biratinfo.com/author/cleaningsewa" target="_blank" className="flex items-center hover:opacity-60 transition hover:scale-110">
+            <a href="https://biratinfo.com/author/rocketsingh" target="_blank" className="flex items-center hover:opacity-60 transition hover:scale-110">
               <img src={`/icons/biratinfo.svg`} className="h-5 w-5 sm:h-6 sm:w-6 cursor-pointer" />
             </a>
             <a href="#" className="flex items-center hover:opacity-60 transition hover:scale-110">
@@ -177,9 +177,9 @@ const Footer = () => {
           {/* CONTACT BOXES */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
 
-            <a href="mailto:cleaningsewa@sriyog.com" className="flex items-center gap-2 border-2 rounded-lg px-7 py-3 w-full sm:w-auto">
+            <a href="mailto:support@rocketsingh.com" className="flex items-center gap-2 border-2 rounded-lg px-7 py-3 w-full sm:w-auto">
               <img src="/icons/email.svg" alt="email" className="h-6 w-6" />
-              <span className="text-sm">rocketsingh@sriyog.com</span>
+              <span className="text-sm">support@rocketsingh.com</span>
             </a>
 
             <a href="tel:+919851152774" className="flex items-center gap-2 border-2 rounded-lg px-7 py-3 w-full sm:w-auto">
