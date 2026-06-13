@@ -6,7 +6,8 @@ export const metadata: Metadata = {
   description: "Download the RocketSingh app for super fast on demand home services.",
 };
 
-const PLAY_STORE_URL = "#";
+const PLAY_STORE_URL =
+  "https://play.google.com/store/apps/details?id=com.pracas.rocketsingh";
 const APP_STORE_URL = "#";
 
 const storeButtonClass =
