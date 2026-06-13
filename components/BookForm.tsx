@@ -23,6 +23,12 @@ import {
   PROPERTY_TYPES,
   REFERRAL_SOURCES,
 } from "@/lib/book-form-options";
+import {
+  bookingScheduleValidationError,
+  getAvailableShifts,
+  getBookingNowTime,
+  getBookingToday,
+} from "@/lib/booking-datetime";
 import { emailValidationError } from "@/lib/form-validation";
 
 const onlyDigits = (v: string) => v.replace(/[^0-9]/g, "");
@@ -105,7 +111,17 @@ export default function BookForm() {
   const [submitWarning, setSubmitWarning] = useState<string | null>(null);
   const [emailError, setEmailError] = useState<string | null>(null);
 
-  const minDate = new Date().toISOString().slice(0, 10);
+  const todayLocal = getBookingToday();
+  const minDate = todayLocal;
+  const availableShifts = startDate ? getAvailableShifts(startDate) : BOOKING_SHIFTS;
+  const minDeadlineTime =
+    deadlineDate === todayLocal ? getBookingNowTime() : undefined;
+
+  useEffect(() => {
+    if (startDate && shift && !getAvailableShifts(startDate).includes(shift)) {
+      setShift("");
+    }
+  }, [startDate, shift]);
 
   const resetFields = useCallback(() => {
     setFullName("");
@@ -188,6 +204,17 @@ export default function BookForm() {
 
     if (!/^\d{10}$/.test(phone)) {
       setSubmitError("Enter a valid 10-digit mobile number.");
+      return;
+    }
+
+    const scheduleErr = bookingScheduleValidationError({
+      startDate,
+      deadlineDate,
+      deadlineTime,
+      shift,
+    });
+    if (scheduleErr) {
+      setSubmitError(scheduleErr);
       return;
     }
 
@@ -423,6 +450,7 @@ export default function BookForm() {
             <input
               id={`${formId}-deadline-time`}
               type="time"
+              min={minDeadlineTime}
               className={textInputClass()}
               value={deadlineTime}
               onChange={(e) => setDeadlineTime(e.target.value)}
@@ -434,7 +462,9 @@ export default function BookForm() {
         <FormSelect
           id={`${formId}-shift`}
           label="Select Shift"
-          options={BOOKING_SHIFTS}
+          options={
+            availableShifts.length > 0 ? availableShifts : [...BOOKING_SHIFTS]
+          }
           value={shift}
           onChange={setShift}
         />

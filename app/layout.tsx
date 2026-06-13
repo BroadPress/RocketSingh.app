@@ -3,6 +3,7 @@ import './globals.css';
 import Script from 'next/script';
 import LayoutChrome from '../components/LayoutChrome';
 import GoogleAnalytics from '../components/GoogleAnalytics';
+import { OneSignalInit } from './OneSignal';
 import { Suspense } from 'react';
 
 
@@ -43,6 +44,8 @@ export default function RootLayout({ children }:Readonly<{
         <link rel="icon" type="image/png" href="/favicon/favicon.png" />
         <link rel="apple-touch-icon" href="/favicon/favicon.png" />
         <link rel="manifest" href="/manifest.json" />
+
+        <OneSignalInit />
 
         {/* Google Tag Manager */}
         <Script id="gtm-script" strategy="afterInteractive">

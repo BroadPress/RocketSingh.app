@@ -14,6 +14,7 @@ import {
   publishFilesForAirtable,
 } from "@/lib/attachment-staging";
 import { BOOKING_PHOTO_FIELD } from "@/lib/book-form-options";
+import { bookingScheduleValidationError } from "@/lib/booking-datetime";
 import { emailValidationError } from "@/lib/form-validation";
 
 /**
@@ -399,6 +400,14 @@ function validatePayload(payload: BookingPayload): string | null {
 
   const emailErr = emailValidationError(payload.email);
   if (emailErr) return emailErr;
+
+  const scheduleErr = bookingScheduleValidationError({
+    startDate: payload.startDate,
+    deadlineDate: payload.deadlineDate,
+    deadlineTime: payload.deadlineTime,
+    shift: payload.shift,
+  });
+  if (scheduleErr) return scheduleErr;
 
   return null;
 }

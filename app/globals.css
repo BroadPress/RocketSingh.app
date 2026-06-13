@@ -115,3 +115,104 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Wikipedia-style smart app install banner (mobile) */
+.smart-app-banner {
+  position: fixed;
+  inset: max(8px, env(safe-area-inset-top, 0px)) 10px auto 10px;
+  z-index: 10001;
+  pointer-events: none;
+}
+
+.smart-app-banner__card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow:
+    0 2px 8px rgb(0 0 0 / 0.12),
+    0 0 0 1px rgb(0 0 0 / 0.06);
+  pointer-events: auto;
+}
+
+.smart-app-banner__icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.smart-app-banner__copy {
+  min-width: 0;
+  flex: 1;
+}
+
+.smart-app-banner__title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #202122;
+}
+
+.smart-app-banner__domain {
+  margin: 2px 0 0;
+  font-size: 13px;
+  line-height: 1.25;
+  color: #72777d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.smart-app-banner__install {
+  flex-shrink: 0;
+  padding: 4px 2px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.smart-app-banner__install:active {
+  color: #2a4b8d;
+}
+
+html[data-smart-banner="visible"] .header {
+  top: calc(4.75rem + env(safe-area-inset-top, 0px));
+}
+
+html[data-smart-banner="visible"] body {
+  padding-top: calc(4.75rem + env(safe-area-inset-top, 0px));
+}
+
+/* OneSignal prompts above fixed bottom nav (z-50) */
+#onesignal-slidedown-container,
+#onesignal-bell-launcher,
+.onesignal-customlink-container {
+  position: fixed !important;
+  z-index: 10000 !important;
+  pointer-events: auto !important;
+}
+
+#onesignal-slidedown-container .onesignal-slidedown-dialog {
+  max-width: calc(100vw - 24px);
+}
+
+@media (max-width: 768px) {
+  #onesignal-slidedown-container,
+  #onesignal-bell-launcher {
+    bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px)) !important;
+  }
+
+  #onesignal-slidedown-container {
+    left: 0 !important;
+    right: 0 !important;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

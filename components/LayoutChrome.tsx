@@ -6,6 +6,7 @@ import Sidekick from "./Sidekick";
 import Navbar from "./Navbar";
 import RoadBlock from "./Roadblock";
 import CookieConsent from "./CookieConsent";
+import SmartAppBanner from "./SmartAppBanner";
 import { Suspense, type ReactNode } from "react";
 
 type LayoutChromeProps = {
@@ -15,6 +16,7 @@ type LayoutChromeProps = {
 export default function LayoutChrome({ children }: LayoutChromeProps) {
   return (
     <>
+      <SmartAppBanner />
       <CookieConsent />
       <RoadBlock />
       <Navbar />
