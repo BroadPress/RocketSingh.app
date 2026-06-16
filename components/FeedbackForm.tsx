@@ -194,16 +194,6 @@ export default function FeedbackForm() {
 
   return (
     <div className="w-full bg-white px-5 py-8 sm:px-8 sm:py-10">
-      <header className="mb-8 text-center">
-        <h2 className="text-[22px] font-bold text-gray-900 sm:text-[26px]">
-          RocketSingh — Share Your Feedback
-        </h2>
-        <p className="mt-2 text-[15px] text-gray-600">
-          Please share your experience with our services. Your feedback helps us
-          improve.
-        </p>
-      </header>
-
       <form
         id={formId}
         onSubmit={onSubmit}

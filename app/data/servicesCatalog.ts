@@ -32,21 +32,21 @@ export const serviceCategories: ServiceCategory[] = [
         title: "Salon at Home",
         slug: "salon-at-home",
         image: "/services/salon-at-home.jpg",
-        desc: "Salon at Home services bring professional beauty treatments directly to your doorstep. From haircuts and styling to skincare and makeup, our experts provide a spa-like experience in the comfort of your own home.",
+        desc: "A verified beauty professional visits your home to provide salon services — haircuts, styling, skincare, and makeup — delivered on-site by a skilled individual, not a salon setup.",
       },
       
       {
         title: "Bridal Makeup",
         slug: "bridal-makeup",
         image: "/services/bridal-makeup.jpg",
-        desc: "Professional bridal makeup services ensure you look stunning on your special day. Our skilled artists provide customized looks that enhance your natural beauty and complement your dress and style.",
+        desc: "Professional bridal makeup artists visit your location to provide customized looks for your special day — enhancing your natural beauty to complement your dress and style.",
       },
       
       {
         title: "Chef at Home",
         slug: "chef-at-home",
         image: "/services/chef-at-home.jpg",
-        desc: "Chef at Home provides professional culinary services for home cooking needs. Our skilled chefs prepare delicious meals tailored to your preferences and dietary requirements. This service ensures a delightful dining experience without the hassle of meal planning or cooking.",
+        desc: "A professional chef visits your home and prepares meals based on your preferences and dietary needs — cooking service delivered at your location, not a restaurant setup.",
       },
       
     ],
@@ -66,7 +66,7 @@ export const serviceCategories: ServiceCategory[] = [
         title: "Spa at Home",
         slug: "spa-at-home",
         image: "/services/spa-at-home.jpg",
-        desc: "Spa at Home services bring professional wellness treatments directly to your doorstep. From massages and body treatments to skincare and relaxation techniques, our experts provide a luxurious experience in the comfort of your own home.",
+        desc: "A trained spa therapist visits your home to provide massages, body treatments, skincare, and relaxation therapies — wellness services delivered on-site by a verified professional.",
       },
       {
         title: "Physiotherapy",

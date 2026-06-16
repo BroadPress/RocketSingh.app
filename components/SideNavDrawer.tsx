@@ -36,7 +36,7 @@ type NavLinkItem = {
 const primaryNav: NavLinkItem[] = [
   { href: '/', label: 'Home', Icon: Home, isActive: (p) => p === '/' },
   { href: '/services', label: 'Services', Icon: Wrench, isActive: (p) => p.startsWith('/services') },
-  { href: '/book', label: 'Book', Icon: BookOpen, isActive: (p) => p === '/book' },
+  { href: '/book', label: 'Book a Service', Icon: BookOpen, isActive: (p) => p === '/book' },
   { href: '/faq', label: 'FAQ', Icon: HelpCircle, isActive: (p) => p === '/faq' },
   { href: '/partnership', label: 'Partner', Icon: Handshake, isActive: (p) => p.startsWith('/partnership') },
 ];
@@ -185,7 +185,7 @@ const SideNavDrawer: React.FC<SideNavDrawerProps> = ({ isOpen, setIsOpen }) => {
               className="side-nav-drawer__action flex w-full items-center justify-center gap-2 rounded-xl bg-teal-900 px-4 py-2.5 text-[15px] font-semibold text-white hover:bg-teal-800 transition"
             >
               <BookOpen size={18} />
-              Book Now
+              Book a Service
             </Link>
 
             <p className="side-nav-drawer__connect mb-2 pt-1 text-center text-xs font-medium text-gray-500 md:mb-3 md:pt-2">

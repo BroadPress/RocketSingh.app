@@ -18,34 +18,80 @@ export type ServiceDetailContent = {
 
 type ServiceOverride = Partial<ServiceDetailContent>;
 
+type ServiceCopy = {
+  introTitle: string;
+  introParagraph2: string;
+  bookLabel: string;
+  assessmentDescription: string;
+  deliveryDescription: string;
+  faqIncludeQuestion: string;
+  faqBookQuestion: string;
+  faqBookAnswer: string;
+};
+
+function getServiceCopy(service: CatalogService, category: string): ServiceCopy {
+  const name = service.title;
+  const atHomeMatch = name.match(/^(.+?) at [Hh]ome$/);
+
+  if (atHomeMatch) {
+    const base = atHomeMatch[1];
+    const baseLower = base.toLowerCase();
+
+    return {
+      introTitle: `Trusted ${base} Services at Home with RocketSingh`,
+      introParagraph2: `RocketSingh connects you with verified ${baseLower} professionals who visit your home and provide the service on-site. As part of our ${category} lineup, every visit includes transparent pricing, quality materials where needed, and a satisfaction-first approach.`,
+      bookLabel: `Book ${base} at Home`,
+      assessmentDescription: `A RocketSingh professional reviews your requirements and prepares to provide ${baseLower} services at your home.`,
+      deliveryDescription: `Your assigned professional delivers ${baseLower} services at your home using industry-standard tools and proven techniques.`,
+      faqIncludeQuestion: `What's included when a professional provides ${baseLower} services at my home?`,
+      faqBookQuestion: `How do I book ${baseLower} services at home?`,
+      faqBookAnswer: `Click "Book a Service" on this page or visit our booking page, select ${baseLower} services at home, pick a date, and confirm your appointment.`,
+    };
+  }
+
+  const nameLower = name.toLowerCase();
+
+  return {
+    introTitle: `Trusted ${name} with RocketSingh`,
+    introParagraph2: `RocketSingh sends verified professionals to your location to provide ${nameLower}. As part of our ${category} lineup, every visit includes transparent pricing, quality materials where needed, and a satisfaction-first approach.`,
+    bookLabel: `Book ${name}`,
+    assessmentDescription: `A RocketSingh professional reviews your space and requirements before providing ${nameLower}.`,
+    deliveryDescription: `Skilled professionals deliver ${nameLower} at your location using proven methods and industry-standard tools.`,
+    faqIncludeQuestion: `What does ${name} include?`,
+    faqBookQuestion: `How do I book ${name}?`,
+    faqBookAnswer: `Click "Book a Service" on this page or visit our booking page to choose ${nameLower}, pick a date, and confirm your appointment.`,
+  };
+}
+
 function buildDefaultDetail(
   service: CatalogService,
   category: string
 ): ServiceDetailContent {
   const name = service.title;
   const images = getScopeImages(service.slug);
+  const copy = getServiceCopy(service, category);
 
   return {
-    heroTitle: `${name} — Chennai`,
+    heroTitle: `${name} in Chennai`,
     heroDescription: service.desc,
-    bookLabel: `Book ${name}`,
-    introTitle: `Trusted ${name} with RocketSingh`,
+    bookLabel: copy.bookLabel,
+    introTitle: copy.introTitle,
     introParagraphs: [
       service.desc,
-      `RocketSingh brings verified professionals to your doorstep for ${name.toLowerCase()}. As part of our ${category} lineup, every visit includes transparent pricing, quality materials where needed, and a satisfaction-first approach.`,
+      copy.introParagraph2,
       `Whether you need a one-time appointment or ongoing support, our team makes booking simple — schedule online in minutes and track your service from confirmation to completion.`,
     ],
     scopeTitle: "What's Included",
     scopeItems: [
       {
         title: "On-Site Assessment",
-        description: `A RocketSingh professional reviews your space and requirements before starting ${name.toLowerCase()}.`,
+        description: copy.assessmentDescription,
         image: images.assessment,
         imageAlt: `${name} assessment`,
       },
       {
         title: "Expert Service Delivery",
-        description: `Skilled technicians perform ${name.toLowerCase()} using proven methods and industry-standard tools.`,
+        description: copy.deliveryDescription,
         image: images.delivery,
         imageAlt: `${name} delivery`,
       },
@@ -59,13 +105,13 @@ function buildDefaultDetail(
     faqs: [
       {
         id: 1,
-        question: `What does ${name} include?`,
+        question: copy.faqIncludeQuestion,
         answer: service.desc,
       },
       {
         id: 2,
-        question: `How do I book ${name}?`,
-        answer: `Click "Book a Service" on this page or visit our booking page to choose ${name.toLowerCase()}, pick a date, and confirm your appointment.`,
+        question: copy.faqBookQuestion,
+        answer: copy.faqBookAnswer,
       },
       {
         id: 3,
@@ -195,11 +241,11 @@ const serviceOverrides: Record<string, ServiceOverride> = {
   "spa-at-home": {
     heroTitle: "Luxury Spa Treatments in the Comfort of Your Home",
     heroDescription:
-      "Relaxation, rejuvenation, and wellness — professional spa therapists bring the full experience to your living room.",
-    introTitle: "Spa at Home with RocketSingh",
+      "A trained spa therapist visits your home to provide massages, facials, and wellness treatments — relaxation without leaving your door.",
+    introTitle: "Spa Services at Home with RocketSingh",
     introParagraphs: [
-      "Skip the traffic and waiting rooms. RocketSingh spa at home delivers massages, body scrubs, facials, and aromatherapy sessions with premium products and trained therapists.",
-      "Perfect for busy professionals, new parents, or anyone who wants a private wellness retreat without leaving home.",
+      "Skip the traffic and waiting rooms. A RocketSingh spa professional comes to your home and provides massages, body scrubs, facials, and aromatherapy sessions with premium products.",
+      "Perfect for busy professionals, new parents, or anyone who wants a private wellness session delivered at home by a verified therapist.",
       "Choose individual treatments or curated spa packages for couples and special occasions.",
     ],
     scopeTitle: "Popular Spa Treatments",
@@ -226,6 +272,75 @@ const serviceOverrides: Record<string, ServiceOverride> = {
       },
     ];
     })(),
+  },
+  "salon-at-home": {
+    heroTitle: "Professional Salon Services at Your Home",
+    heroDescription:
+      "A verified beauty professional visits your home for haircuts, styling, skincare, and makeup — salon-quality service without the salon visit.",
+    introTitle: "Salon Services at Home with RocketSingh",
+    introParagraphs: [
+      "RocketSingh connects you with skilled beauty professionals who come to your home and provide salon services on-site. From haircuts and blowouts to skincare and makeup, the service is delivered by an individual expert at your location.",
+      "No need to travel or wait at a salon. Book a time that suits you, and a verified professional arrives with the tools and products needed to complete your service at home.",
+      "Ideal for busy schedules, family appointments, or anyone who prefers personal care in the comfort of their own space.",
+    ],
+    scopeTitle: "What's Included",
+    scopeItems: (() => {
+      const img = getScopeImages("salon-at-home");
+      return [
+        {
+          title: "On-Site Assessment",
+          description:
+            "Your assigned professional reviews your requirements and prepares to provide salon services at your home.",
+          image: img.assessment,
+          imageAlt: "Salon service assessment at home",
+        },
+        {
+          title: "Expert Service Delivery",
+          description:
+            "A beauty professional provides haircut, styling, skincare, or makeup services at your home using industry-standard tools.",
+          image: img.delivery,
+          imageAlt: "Salon service provided at home",
+        },
+        {
+          title: "Final Quality Check",
+          description:
+            "We confirm you are satisfied with the service before the professional completes the visit.",
+          image: img.qualityCheck,
+          imageAlt: "Salon service quality check",
+        },
+      ];
+    })(),
+    faqs: [
+      {
+        id: 1,
+        question: "What's included when a professional provides salon services at my home?",
+        answer:
+          "A verified beauty professional visits your home and provides services such as haircuts, styling, skincare, and makeup. They bring the tools and products needed to complete the service at your location.",
+      },
+      {
+        id: 2,
+        question: "How do I book salon services at home?",
+        answer:
+          'Click "Book Salon at Home" on this page or visit our booking page, select salon services at home, pick a date, and confirm your appointment.',
+      },
+      {
+        id: 3,
+        question: "Are RocketSingh professionals verified?",
+        answer:
+          "Yes. Every professional on our platform is background-checked, skill-assessed, and rated by customers after each job.",
+      },
+      {
+        id: 4,
+        question: "Which cities do you serve?",
+        answer: "RocketSingh provides home services in Chennai and nearby areas.",
+      },
+      {
+        id: 5,
+        question: "What if I am not satisfied with the service?",
+        answer:
+          "Contact us within 24 hours of your appointment. RocketSingh will review the issue and arrange a re-visit or resolution at no extra cost where applicable.",
+      },
+    ],
   },
   plumbing: {
     heroTitle: "Expert Plumbing Services — Leaks, Installs & Repairs",

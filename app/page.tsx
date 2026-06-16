@@ -7,23 +7,10 @@ import ServiceCard from "../components/ServiceCard";
 
 const displayLocation = "Chennai, India";
 
-const slides = [
-  {
-    id: 1,
-    title: `Professional Home Services in ${displayLocation}`,
-    subtitle: "Trusted professional marketplace",
-  },
-  {
-    id: 2,
-    title: `AC & Deep Cleaning Services`,
-    subtitle: "Sanitization, maintenance & care",
-  },
-  {
-    id: 3,
-    title: `On Demand Home Services`,
-    subtitle: "Spotless spaces for every ",
-  },
-];
+const heroContent = {
+  title: `Professional Home Services in ${displayLocation}`,
+  subtitle: "AI Powered Service Marketplace",
+};
 
 const sections = {
   about: {
@@ -47,19 +34,19 @@ const sections = {
 const expertServices = [
   {
     title: "Spa at Home",
-    desc: "Spa at Home services bring professional wellness treatments directly to your doorstep. From massages and body treatments to skincare and relaxation techniques.",
+    desc: "A trained therapist visits your home to provide massages, body treatments, and skincare — wellness services delivered on-site by a verified professional.",
     image: "/services/spa-at-home.jpg",
     href: "/services/spa-at-home",
   },
   {
     title: "Bridal Makeup",
-    desc: "Professional bridal makeup services ensure you look stunning on your special day. Our skilled artists provide customized looks that enhance your natural beauty.",
+    desc: "A professional makeup artist visits your location to provide a customized bridal look that enhances your natural beauty for your special day.",
     image: "/services/bridal-makeup.jpg",
     href: "/services/bridal-makeup",
   },
   {
     title: "Salon at Home",
-    desc: "Salon at Home services bring professional beauty treatments directly to your doorstep. From haircuts and styling to skincare and makeup.",
+    desc: "A verified beauty professional visits your home for haircuts, styling, skincare, and makeup — salon services provided on-site at your location.",
     image: "/services/salon-at-home.jpg",
     href: "/services/salon-at-home",
   },
@@ -93,14 +80,8 @@ const featuredBlogs = [
 ];
 
 export default function Home() {
-  const [current, setCurrent] = useState(0);
   const [activeSection, setActiveSection] = useState("about");
   const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const timer = setInterval(() => setCurrent((prev) => (prev + 1) % slides.length), 10000);
-    return () => clearInterval(timer);
-  }, []);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 400);
@@ -113,19 +94,17 @@ export default function Home() {
     <div className="w-full font-sans text-gray-800">
       {/* HERO */}
       <section className="w-full bg-white text-teal-900">
-        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 pt-6 pb-10 sm:py-16 flex flex-col md:flex-row items-center gap-12 md:gap-16">
-          <div className="w-full md:w-1/2 space-y-6">
-            <p className="uppercase tracking-[0.25em] text-teal-900 text-xs sm:text-sm">
-              Cleaning Services · {displayLocation}
+        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 pt-6 pb-10 sm:py-16 flex flex-col md:flex-row items-center gap-4 md:gap-16">
+          <div className="w-full md:w-1/2 space-y-4 md:space-y-6">
+            <p className="tracking-wide text-teal-900 text-xs sm:text-sm font-medium">
+              SuperFast on Demand Home Service
             </p>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-teal-900">
-              {slides[current].title}
+              {heroContent.title}
             </h1>
-            <p className="text-base sm:text-lg text-teal-900 font-medium">{slides[current].subtitle}</p>
+            <p className="text-base sm:text-lg text-teal-900 font-medium">{heroContent.subtitle}</p>
             <p className="text-sm sm:text-base text-gray-900 max-w-md">
-              From deep home cleaning to commercial sanitization, our verified professionals in{" "}
-              <span className="font-semibold text-teal-900">{displayLocation}</span> deliver spotless results
-              with eco-friendly products and clear pricing.
+            ROCKETSINGH is created as an on-demand hyperlocal service platform that connects home owners with skilled professionals.
             </p>
             <div className="hidden md:flex flex-wrap items-center gap-3 pt-3">
               <Link href="/book" className="bg-[#0E4541] text-white font-semibold px-6 sm:px-8 py-2.5 rounded-full shadow-lg hover:bg-teal-900 transition-all duration-300 animate-pulse-soft">

@@ -273,12 +273,6 @@ export default function BookForm() {
 
   return (
     <div className="w-full bg-white px-5 py-8 sm:px-8 sm:py-10">
-      <header className="mb-8 text-center">
-        <h2 className="text-[22px] font-bold text-gray-900 sm:text-[26px]">
-          RocketSingh — Fix it Today
-        </h2>
-      </header>
-
       <form
         id={formId}
         onSubmit={onSubmit}

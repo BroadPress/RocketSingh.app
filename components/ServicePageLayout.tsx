@@ -48,84 +48,106 @@ export default function ServicePageLayout({
   };
 
   return (
-    <div className="flex flex-col gap-0 mb-40">
-      <div className="relative w-full h-[560px] flex items-center justify-center text-white mb-20">
+    <div className="flex flex-col">
+      <section className="relative flex w-full items-center justify-center text-white">
         <img
           src={heroImage}
           alt={heroTitle}
-          className="absolute inset-0 z-0 object-cover h-full w-full"
+          className="absolute inset-0 z-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
-        <div className="relative z-10 max-w-4xl text-center px-4">
-          <div className="flex flex-col items-center justify-center h-[277px] px-4 py-8 text-center">
-            <div className="mb-4 text-sm w-full flex justify-center items-center text-white opacity-90">
-              Home &gt; Services &gt; <span className="font-semibold">{serviceName}</span>
-            </div>
-            <h1 className="mb-4 text-5xl font-bold text-white md:text-[52px]">{heroTitle}</h1>
-            <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
-              {heroDescription}
-            </p>
-            <Link href="/book">
-              <button className="bg-[#0E4541] text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-900 transition">
-                {bookLabel}
-              </button>
-            </Link>
+        <div className="absolute inset-0 z-10 bg-black/60" />
+        <div className="relative z-20 w-full max-w-4xl px-4 py-8 text-center sm:px-6 sm:py-12 lg:py-14">
+          <div className="mb-3 flex w-full items-center justify-center text-xs text-white/90 sm:mb-4 sm:text-sm">
+            Home &gt; Services &gt;{" "}
+            <span className="ml-1 font-semibold">{serviceName}</span>
           </div>
-        </div>
-      </div>
-
-      <div className="mx-auto px-5 py-10 max-w-7xl text-center">
-        <h2 className="text-3xl font-bold text-teal-900 mb-5">{introTitle}</h2>
-        {introParagraphs.map((paragraph, index) => (
-          <p key={index} className="text-gray-700 leading-relaxed mb-6">
-            {paragraph}
+          <h1 className="mb-3 text-2xl font-bold leading-tight text-white sm:mb-4 sm:text-4xl lg:text-[52px]">
+            {heroTitle}
+          </h1>
+          <p className="mx-auto mb-6 max-w-3xl text-sm leading-relaxed text-white sm:text-base md:text-lg">
+            {heroDescription}
           </p>
-        ))}
-      </div>
+          <Link href="/book">
+            <button className="rounded-lg bg-[#0E4541] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-teal-900 sm:px-6 sm:py-3 sm:text-base">
+              {bookLabel}
+            </button>
+          </Link>
+        </div>
+      </section>
+
+      <section className="mx-auto w-full max-w-4xl px-4 pt-6 pb-6 text-center sm:px-6 sm:pt-8">
+        <h2 className="mb-4 text-2xl font-bold text-teal-900 sm:text-3xl">
+          {introTitle}
+        </h2>
+        <div className="space-y-4 text-left sm:text-center">
+          {introParagraphs.map((paragraph, index) => (
+            <p
+              key={index}
+              className="text-sm leading-relaxed text-gray-700 sm:text-base"
+            >
+              {paragraph}
+            </p>
+          ))}
+        </div>
+      </section>
 
       {scopeItems.length > 0 && (
-        <div className="mx-auto px-5 py-10 max-w-6xl">
-          <h2 className="text-3xl font-bold text-center text-teal-900 mb-10">{scopeTitle}</h2>
-          <div className="grid md:grid-cols-3 gap-6">
+        <section className="mx-auto w-full max-w-6xl px-4 pt-2 pb-6 sm:px-6 sm:pb-8">
+          <h2 className="mb-5 text-center text-2xl font-bold text-teal-900 sm:mb-6 sm:text-3xl">
+            {scopeTitle}
+          </h2>
+          <div className="grid gap-4 sm:gap-6 md:grid-cols-3">
             {scopeItems.map((item) => (
               <div
                 key={item.title}
-                className="bg-white rounded-xl shadow-md p-5 flex flex-col items-center text-center"
+                className="flex flex-col items-center rounded-xl border border-gray-100 bg-white p-4 text-center shadow-md sm:p-5"
               >
                 <img
                   src={item.image}
                   alt={item.imageAlt}
-                  className="w-full h-48 object-cover rounded-lg mb-4"
+                  className="mb-3 h-40 w-full rounded-lg object-cover sm:mb-4 sm:h-48"
                 />
-                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-600">{item.description}</p>
+                <h3 className="mb-2 text-lg font-semibold sm:text-xl">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-gray-600 sm:text-base">
+                  {item.description}
+                </p>
               </div>
             ))}
           </div>
-        </div>
+        </section>
       )}
 
-      <div className="w-[70%] mx-auto flex-col items-center justify-center">
-        <h2 className="text-center text-3xl font-bold text-teal-800 mb-10">
+      <section className="mx-auto w-full max-w-4xl px-4 pt-2 pb-4 sm:px-6">
+        <h2 className="mb-5 text-center text-2xl font-bold text-teal-800 sm:mb-6 sm:text-3xl">
           Frequently Asked Questions
         </h2>
         <div className="space-y-3">
           {faqs.map((faq) => (
-            <div key={faq.id} className="bg-white border border-gray-200 rounded-lg overflow-hidden">
+            <div
+              key={faq.id}
+              className="overflow-hidden rounded-lg border border-gray-200 bg-white"
+            >
               <button
+                type="button"
                 onClick={() => toggleFAQ(faq.id)}
-                className="w-full px-5 py-4 text-left text-gray-800 font-semibold hover:bg-gray-50 flex justify-between items-center"
+                className="flex w-full items-start justify-between gap-3 px-4 py-3.5 text-left text-sm font-semibold text-gray-800 hover:bg-gray-50 sm:px-5 sm:py-4 sm:text-base"
               >
-                <span>{faq.question}</span>
-                <span className="text-gray-500">{openFAQ === faq.id ? "–" : "+"}</span>
+                <span className="min-w-0 flex-1">{faq.question}</span>
+                <span className="shrink-0 text-lg leading-none text-gray-500">
+                  {openFAQ === faq.id ? "–" : "+"}
+                </span>
               </button>
               {openFAQ === faq.id && (
-                <div className="p-5 text-gray-700 border-t border-gray-200">{faq.answer}</div>
+                <div className="border-t border-gray-200 px-4 py-3.5 text-sm leading-relaxed text-gray-700 sm:px-5 sm:py-4 sm:text-base">
+                  {faq.answer}
+                </div>
               )}
             </div>
           ))}
         </div>
-      </div>
+      </section>
     </div>
   );
 }
