@@ -1,8 +1,7 @@
 'use client'
-import Image from 'next/image';
 import Ribbon from '../../components/Ribbon';
-import { title } from 'process';
 
+const sectionImageClass = 'h-40 w-40 shrink-0 object-contain';
 
 export default function Vmgo() {
 
@@ -19,7 +18,7 @@ export default function Vmgo() {
                   <img
                     src="/vmgo/vision.svg"
                     alt="Vision"
-                    className="w-24 h-24"
+                    className="h-24 w-24 object-contain"
                   />
                   <p>Vision</p>
                 </div>
@@ -27,7 +26,7 @@ export default function Vmgo() {
                   <img
                     src="/vmgo/mission.svg"
                     alt="Mission"
-                    className="w-24 h-24"
+                    className="h-24 w-24 object-contain"
                   />
                   <p>Mission</p>
                 </div>
@@ -35,7 +34,7 @@ export default function Vmgo() {
                   <img
                     src="/vmgo/goals.svg"
                     alt="Goals"
-                    className="w-24 h-24"
+                    className="h-24 w-24 object-contain"
                   />
                   <p>Goals</p> 
                 </div>
@@ -43,7 +42,7 @@ export default function Vmgo() {
                   <img
                     src="/vmgo/objectives.svg"
                     alt="Objectives"
-                    className="w-24 h-24"
+                    className="h-24 w-24 object-contain"
                   /> 
                   <p>Objectives</p>    
                 </div> 
@@ -55,7 +54,7 @@ export default function Vmgo() {
         {/* Vision Section */}
         <section id="vision" className="flex justify-between gap-24 mb-12 py-8 max-w-5xl mx-auto">
           <div className="hidden md:flex items-center mb-6 ">
-              <Image height={600} width={800} src="/vmgo/vision.webp" alt="" className="w-auto h-40 text-teal-700 " />
+              <img src="/vmgo/vision.svg" alt="Vision illustration" className={sectionImageClass} />
           </div>
           <div className="p-8 md:p-16 card space-y-4 max-w-3xl rounded-xl">
             <h2 className="text-3xl font-bold text">Vision</h2>
@@ -78,14 +77,14 @@ export default function Vmgo() {
               At RocketSingh, our mission is to revolutionize the way work is connected with workers. We strive to provide a seamless platform that empowers individuals and businesses to find the perfect match for their needs, fostering opportunities for growth, collaboration, and success.            </p>
           </div>
           <div className="hidden md:flex items-center mb-6">
-              <Image height={600} width={800} src="/vmgo/mission.webp" alt="" className="w-auto h-40 " />
+              <img src="/vmgo/mission.svg" alt="Mission illustration" className={sectionImageClass} />
           </div>
         </section>
 
         {/* Goals Section */}
         <section id="goals" className="flex justify-between gap-24 py-8 max-w-5xl mx-auto">
-          <div className="hidden md:flex items-center  mb-6">   
-              <Image height={600} width={800} src="/vmgo/goals.webp" alt="" className="w-60 h-40 " />
+          <div className="hidden md:flex items-center mb-6">
+              <img src="/vmgo/goals.svg" alt="Goals illustration" className={sectionImageClass} />
           </div>
           <div className="p-8 md:p-16 space-y-4 card rounded-xl">
             <h2 className="text-3xl font-bold text">Our Goals</h2>
@@ -118,7 +117,7 @@ export default function Vmgo() {
             ))}
           </div>
           <div className="hidden md:flex items-center mb-6">
-              <Image height={600} width={800} src="/vmgo/Objectives.webp" alt="" className="w-auto h-44 text-teal-700" />
+              <img src="/vmgo/objectives.svg" alt="Objectives illustration" className={sectionImageClass} />
           </div>
         </section>
     </div>
