@@ -12,7 +12,7 @@ const PLAY_STORE_URL =
 
 const heroContent = {
   title: `Professional Home Services in ${displayLocation}`,
-  subtitle: "AI Powered Services",
+  subtitle: "AI Powered Automated Services",
 };
 
 const sections = {
