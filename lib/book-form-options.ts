@@ -150,7 +150,7 @@ export const REFERRAL_SOURCES = [
   "Search Engine Ads",
   "Blog or Article",
   "BIRATINFO",
-  "TACKLES Handyman",
+  "RocketSingh",
   "Other",
 ] as const;
 

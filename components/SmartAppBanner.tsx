@@ -66,10 +66,11 @@ export default function SmartAppBanner() {
     >
       <div className="smart-app-banner__card">
         <Image
-          src="/logo/rocketsingh-logo.png"
+          src="/logo.svg"
           alt=""
           width={40}
           height={40}
+          unoptimized
           className="smart-app-banner__icon"
         />
 

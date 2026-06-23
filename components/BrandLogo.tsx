@@ -17,10 +17,11 @@ export default function BrandLogo({
   return (
     <Link href="/" onClick={onClick} className={`flex items-center gap-2.5 ${className}`}>
       <Image
-        src="/logo/rocketsingh-logo.png"
+        src="/logo.svg"
         alt="RocketSingh logo"
         width={44}
         height={44}
+        unoptimized
         className={`rounded-full object-cover ${imageClassName}`}
         priority
       />
