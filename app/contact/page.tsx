@@ -1,7 +1,7 @@
 import Link from "next/link";
-import ContactForm from "../../components/ContactForm";
+import ContactForm from "./ContactForm";
 import { FormPageTitle } from "../../components/FormPageLayout";
-import MapEmbed from "../../components/GoogleMap";
+import MapEmbed from "./MapEmbed";
 
 const VisitIcon = () => (
   <svg width="27" height="26" fill="none" stroke="#0D5D59" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
