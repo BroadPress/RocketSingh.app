@@ -1,4 +1,4 @@
-import type { ServiceFaq, ServiceScopeItem } from "../../components/ServicePageLayout";
+import type { ServiceFaq, ServiceScopeItem } from "../services/[slug]/ServicePageLayout";
 import {
   getAllServices,
   getServiceBySlug,
